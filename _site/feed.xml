@@ -5,39 +5,104 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 31 Oct 2018 15:19:03 +0800</pubDate>
-    <lastBuildDate>Wed, 31 Oct 2018 15:19:03 +0800</lastBuildDate>
+    <pubDate>Fri, 09 Nov 2018 14:33:10 +0800</pubDate>
+    <lastBuildDate>Fri, 09 Nov 2018 14:33:10 +0800</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
+        <title>写博缘由</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在这个信息如同洪水猛兽的时代，你所需的一切知识仿佛都可以在网上搜索到，知识付费的火爆（很大一部分的功臣是运营推广），公众号的推送，五花八门的各个新闻广告弹窗。每天，从我们每个人身边流过的信息，如同我们的呼吸一样紧密，是跟空气同等的存在。但你看得到，不一定抓的住，没有人能抓住空气，但是每个人都会呼吸呀，吸取我们需要的氧气，排出我们不需要的二氧化碳。学习也一样，就在这得舍之间，一得一舍一收获。&lt;/p&gt;
+
+&lt;h2 id=&quot;现状&quot;&gt;现状&lt;/h2&gt;
+&lt;p&gt;本人从16年毕业之后开始接触《得到》app，觉得很新奇感觉打开了新世界的大门，也生平第一次进行了网上的知识付费；后面慢慢的接触其他知识平台，比如喜马拉雅、知乎live、一周进步，也承认有学到东西，但也承认有些内容就是交了知识税。后面才慢慢懂得，他们的内容介绍都很华丽，什么财富自由，经济学，管理学等等，听着高大上，感觉和上流社会的人接轨了，了解了他们的世界，看到之前未曾见过风景，兴奋不已，乐此不疲，孜孜不倦，不断的刷新我观察世界的角度和问题的方法。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;但老顽童徐小平在直播的时候直言说到，这些东西，你们看看，当扩充自己的知识面就可以了，财富自由这些就不用想了，没用的&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;确实，幸福过后感觉也没有留下什么东西，工作还是那样的工作，听的内容离我有点远。各类资料也没有去细心的学习，百度网盘各种公开课、软件、和视频素材占了3T多的空间，印象笔记收集到的资料也有了25G，中间也有多次的进行整理命名，排列。里面的内容却没有花时间去研读呀， 这个相信很多小伙伴也和我一样吧。&lt;/p&gt;
+
+&lt;h2 id=&quot;改变&quot;&gt;改变&lt;/h2&gt;
+&lt;p&gt;每周更新2，3条博客或对网站进行更新工作，保持写博客还是迫使自己去作出一点改变，去总结或思考某些问题吧。鸡汤文，广告软文太多，还是希望看到一些自己想看的（就是我自己写的）。也将实践费曼的学习方法，看下成长的步伐究竟有多大。&lt;br /&gt;
+立博为证，让大家一起来见证我的学习历程。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ps.为了做好重新的归纳总结之前学过文章，我把印象笔记里的资料用&lt;strong&gt;Mweb&lt;/strong&gt;整理成了MD的格式
+，发现图片是一个很大的问题。并不像富文本那般的轻松解决，对比了网上形形色色的资料之后，发现MD还是适合程序员编辑使用，而我是个技术员啊，技术收集和整理的很多资料都是以附件的形式（比如工程规范什么的），我还是乖乖的用好印象笔记吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;学习原则-费曼学习法&quot;&gt;学习原则-费曼学习法&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;参考相关资料《别闹了，费曼先生》，在得到听书里面听&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;费曼学习法的核心就是通过转述来巩固你自己的知识。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;确定一个学习概念&lt;br /&gt;
+先拿出一张白纸，把你要学习的这一个概念写在白纸的最上面。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;将概念复述给别人&lt;br /&gt;
+在白纸上写下你对这个概念的理解，写的时候，想象你在和别人交流，给别人转述这个概念。在转述的时候，解释不清楚的地方，要么就是你的知识还没有完全掌握，要么就是你的转述有问题，没有抓住这个概念的实质，这些就是你需要努力深入学习的部分。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;纠错、深入学习&lt;br /&gt;
+把刚才给别人转述时解释不清的部分重新学习，直到把那些搞不懂的地方全都可以流畅地写在纸上为止。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;回顾和精简&lt;br /&gt;
+当我们把所有的学习概念都弄清楚之后，用自己的话，把这个概念重新转述一遍， 只要别人能听懂你说的意思，那就说明你自己的学习成功了。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Fri, 09 Nov 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/11/09/%E5%86%99%E5%8D%9A%E6%BA%90%E7%94%B1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/11/09/%E5%86%99%E5%8D%9A%E6%BA%90%E7%94%B1/</guid>
+        
+        <category>博客</category>
+        
+        <category>学习</category>
+        
+        <category>改变</category>
+        
+        <category>成长</category>
+        
+        <category>费曼学习法</category>
+        
+        
+      </item>
+    
+      <item>
         <title>个人博客搭建记录</title>
-        <description>&lt;p&gt;&lt;a href=&quot;&quot;&gt;TOC&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;h1 id=&quot;个人博客搭建记录&quot;&gt;个人博客搭建记录📝&lt;/h1&gt;
+&lt;h3 id=&quot;20180928---买域名&quot;&gt;2018/09/28   #买域名&lt;/h3&gt;
+&lt;p&gt;在&lt;a href=&quot;http://www.haihuizhuji.com/&quot;&gt;海会主机&lt;/a&gt; 申请的顶级域名&lt;a href=&quot;https://chenxuankun.com/&quot;&gt;chenxuankun.com&lt;/a&gt;，当时是看了哔哩哔哩的建站视频，跃跃欲试，还在这个平台租了个主机，建了一个比较简陋的系统。后面没能力去更新，遂卒。幸好是主机买的是试用版的。&lt;/p&gt;
 
-&lt;h1 id=&quot;个人博客搭建记录&quot;&gt;个人博客搭建记录📝&lt;/h1&gt;
-&lt;p&gt;2018/09/28   #买域名
-在&lt;a href=&quot;http://www.haihuizhuji.com/&quot;&gt;海会主机&lt;/a&gt; 申请的顶级域名&lt;a href=&quot;https://chenxuankun.com/&quot;&gt;chenxuankun.com&lt;/a&gt;，当时是看了哔哩哔哩的建站视频，跃跃欲试，还在这个平台租了个主机，建了一个比较简陋的系统。后面没能力去更新，遂卒。幸好是主机买的是试用版的。&lt;/p&gt;
-
-&lt;h2 id=&quot;20181018----用workpress&quot;&gt;2018/10/18    #用workpress&lt;/h2&gt;
+&lt;h3 id=&quot;20181018----用workpress&quot;&gt;2018/10/18    #用workpress&lt;/h3&gt;
 &lt;p&gt;在网上搜索一圈之后发现有人在吹&lt;a href=&quot;https://wordpress.com/&quot;&gt;workpress&lt;/a&gt;，感觉厉害得很，也有很多人在用，看下 $48 美元，和租个主机的价钱差不多。抱着买个来试一下态度，上网搜教程，映射了之前的域名，还挺满意的，看看后面的结果。&lt;/p&gt;
 
-&lt;h2 id=&quot;20181026---转github&quot;&gt;2018/10/26   #转github&lt;/h2&gt;
+&lt;h3 id=&quot;20181026---转github&quot;&gt;2018/10/26   #转github&lt;/h3&gt;
 &lt;p&gt;呃，这个workpress方便是方便，但是时不时有商务版的购买提示出来，要修改点东西（人在前期的工作是很能折腾的，后期应该就好很多了😂），发现权限不够。发现有免费的GitHub，直接上注册……&lt;/p&gt;
 
-&lt;h2 id=&quot;20181027&quot;&gt;2018/10/27&lt;/h2&gt;
+&lt;h3 id=&quot;20181027&quot;&gt;2018/10/27&lt;/h3&gt;
 &lt;p&gt;俗话说大树底下好乘凉，找到&lt;a href=&quot;http://qiubaiying.top/2017/02/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&quot;&gt;By&lt;/a&gt;大神，直接抱大腿，克隆了他的博客源码，在这个基础上修改，话说需要注意的点还是挺多的。一天把基本的框架定好了，icon、文章和细节的操作的方面留到后面吧，一步一步来。PS.半个小时是做不完的，坑还有的…….&lt;/p&gt;
 
-&lt;h2 id=&quot;20181030&quot;&gt;2018/10/30&lt;/h2&gt;
-&lt;p&gt;装了大半天的jekyll 本地部署还有难度的，其中遇到的坑也是不少。参考的教材资料是&lt;a href=&quot;&quot;&gt;&lt;/a&gt;,里面有对问题详细的解析啦，还有一个小建议，ruby 装不上最新版本的话，试下安装最新系统10.14 的XCODE，误打误撞也不知道是不是这样原因才可以安装成功的。安装不上还有一个神奇的方法。
-下面这个是获取权限的方法
-/n
-/n
-&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo xxxxx&lt;/code&gt;
-神奇
-下面这个是安装的方式&lt;/p&gt;
+&lt;h3 id=&quot;20181030&quot;&gt;2018/10/30&lt;/h3&gt;
+&lt;p&gt;装了大半天的jekyll 本地部署还有难度的，其中遇到的坑也是不少。参考的教材资料是&lt;a href=&quot;&quot;&gt;&lt;/a&gt;,里面有对问题详细的解析啦，还有一个小建议，ruby 装不上最新版本的话，试下安装最新系统10.14 的XCODE，误打误撞也不知道是不是这样原因才可以安装成功的。安装不上还有一个神奇的方法。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo xxxxx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo install xxxx -n str/usr/local/bin
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h3 id=&quot;20181106&quot;&gt;2018/11/06&lt;/h3&gt;
+&lt;p&gt;上传初代icon&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Oct 2018 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2018/10/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
