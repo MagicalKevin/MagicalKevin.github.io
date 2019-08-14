@@ -5,9 +5,114 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 09 Nov 2018 14:33:10 +0800</pubDate>
-    <lastBuildDate>Fri, 09 Nov 2018 14:33:10 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.4</generator>
+    <pubDate>Wed, 14 Aug 2019 23:20:34 +0800</pubDate>
+    <lastBuildDate>Wed, 14 Aug 2019 23:20:34 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>定义鼠标按键的软件-XMouse</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;找到这个款软件呢，是因为我想买一个带宏的鼠标来体验下，但是店家给我发货发错了，发了一个不带宏的普通鼠标，这个普通鼠标就普通鼠标吧，好歹能用，当晚就被安利了这个软件&lt;a href=&quot;https://www.highrez.co.uk/downloads/XMouseButtonControl.htm&quot;&gt;XMouse&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;使用场景&quot;&gt;使用场景&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;文档的复制、黏贴&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;CAD 的快捷键定义（失败了）&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;游戏的动作设置（没试过是否可行）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;官方介绍&quot;&gt;官方介绍&lt;/h2&gt;
+
+&lt;p&gt;XMouse按钮控件（XMBC）允许您创建应用程序和窗口特定的配置文件。这反过来允许您为各个应用程序或窗口重新配置鼠标行为。对于每个配置文件，您还可以配置最多5个“层”的不同按钮配置，您可以使用热键或鼠标按钮进行切换。&lt;/p&gt;
+
+&lt;p&gt;默认情况下，当鼠标移动到定义的窗口或应用程序上时，配置文件会自动激活。 
+这有很多用途，例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;更改鼠标在某些窗口上的行为，例如将鼠标滚轮悬停在系统托盘或视频管上时使鼠标滚轮更改音量。&lt;/li&gt;
+  &lt;li&gt;在本身不支持扩展，第4和第5个鼠标按钮的游戏中，您可以将按键映射到每个按钮。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;XMBC允许您更改鼠标按钮和滚轮的行为。可用于映射到鼠标按钮的广泛功能列表包括以下选项：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用“模拟击键”编辑器发送任何键&lt;/li&gt;
+  &lt;li&gt;Cording（移位/组合）按钮执行不同的操作&lt;/li&gt;
+  &lt;li&gt;启动任何Windows应用程序&lt;/li&gt;
+  &lt;li&gt;剪贴板控件（复制/剪切/粘贴）&lt;/li&gt;
+  &lt;li&gt;媒体控制（播放/暂停/停止/音量/静音等）&lt;/li&gt;
+  &lt;li&gt;将屏幕（或活动窗口）图像捕获到剪贴板&lt;/li&gt;
+  &lt;li&gt;点击拖动[粘滞按钮/键]&lt;/li&gt;
+  &lt;li&gt;点击拖动[粘滞按钮/键]&lt;/li&gt;
+  &lt;li&gt;对特定Windows操作系统的各种支持，例如Vista中的Flip3D，Windows 8中的ModernUI / Metro和Windows 10中的虚拟桌面！&lt;/li&gt;
+  &lt;li&gt;还有更多！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;软件的设置&quot;&gt;软件的设置&lt;/h2&gt;
+
+&lt;p&gt;如下图所示，我需要的功能比较少，只是一个复制、黏贴的功能&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\picture\SoftwareTool_xmouse_set.png&quot; alt=&quot;SoftwareTool_xmouse_set&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如上图所示的设置，鼠标第四、五按钮，就是鼠标的侧边键，ok，完成~~~&lt;/p&gt;
+</description>
+        <pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/14/%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E7%9A%84%E8%BD%AF%E4%BB%B6-XMouse/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/14/%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E7%9A%84%E8%BD%AF%E4%BB%B6-XMouse/</guid>
+        
+        <category>效率</category>
+        
+        <category>软件</category>
+        
+        <category>win</category>
+        
+        <category>鼠标</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>“从”“心”出发</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近的生活总是在浑浑噩噩的中度过，不断的努力又不断的再放弃，一遍又一遍的循环，当然这个状态不能让它持续太久，但我真的一次都没有成功过，从考大学、学英语、减肥，这个几个浅显可以观察到的内容，我真的对自己的掌控力很差。但我认识自己这一点，我清晰的知道我自己是一个怎样的人，我不能面对他， 所以我要打造另一个自己，打造一个自己渴望成为的自己。我会不断的分享自己的成长经历，让我自己的优点暴露出来，让自己知道自己的缺点，通过显现的内容，来表现我的努力，努力要大家都看得到，自己藏着掖着的就会有惰性，这个是我对自己精准的判断，情况适合我个人，当然大家可以参考。&lt;/p&gt;
+
+&lt;h2 id=&quot;目标&quot;&gt;目标&lt;/h2&gt;
+
+&lt;p&gt;现在做的事情，及我目前的追求和目标：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;拿到本科文凭（需准备10月26、27的成人高考入学考试）&lt;/li&gt;
+  &lt;li&gt;学好英语口语（流利说每天都在坚持学习，一年后拿到Level5的成绩）&lt;/li&gt;
+  &lt;li&gt;健身（主要还是要让自己感到舒服）&lt;/li&gt;
+  &lt;li&gt;工作（积累智能化的相关知识，明年5月份前需要达到能独立设计的结果）&lt;/li&gt;
+  &lt;li&gt;二建机电专业（明年一起过三科）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;行动&quot;&gt;行动&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;定个不太夸张的计划，在我的网站上明天更新至少一篇文章，直到今年年底结束，分享我在学习的这段过程中遇到的问题和收获，也会将自己的整理好的干货分享到网站上&lt;/li&gt;
+  &lt;li&gt;坚持早睡早起的行为习惯，每周记录一次自己的时间安排，这个后续会在我的网站发布出来我的方法。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;励志总结&quot;&gt;励志总结&lt;/h2&gt;
+
+&lt;p&gt;小时候吹过的牛，想做的事，是时候去完成了。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/12/%E4%BB%8E-%E5%BF%83-%E5%87%BA%E5%8F%91/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/12/%E4%BB%8E-%E5%BF%83-%E5%87%BA%E5%8F%91/</guid>
+        
+        <category>学习</category>
+        
+        <category>改变</category>
+        
+        <category>奋斗</category>
+        
+        
+      </item>
     
       <item>
         <title>写博缘由</title>
@@ -89,11 +194,11 @@
 &lt;h3 id=&quot;20181026---转github&quot;&gt;2018/10/26   #转github&lt;/h3&gt;
 &lt;p&gt;呃，这个workpress方便是方便，但是时不时有商务版的购买提示出来，要修改点东西（人在前期的工作是很能折腾的，后期应该就好很多了😂），发现权限不够。发现有免费的GitHub，直接上注册……&lt;/p&gt;
 
-&lt;h3 id=&quot;20181027&quot;&gt;2018/10/27&lt;/h3&gt;
+&lt;h3 id=&quot;20181027--克隆博客模版&quot;&gt;2018/10/27  #克隆博客模版&lt;/h3&gt;
 &lt;p&gt;俗话说大树底下好乘凉，找到&lt;a href=&quot;http://qiubaiying.top/2017/02/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&quot;&gt;By&lt;/a&gt;大神，直接抱大腿，克隆了他的博客源码，在这个基础上修改，话说需要注意的点还是挺多的。一天把基本的框架定好了，icon、文章和细节的操作的方面留到后面吧，一步一步来。PS.半个小时是做不完的，坑还有的…….&lt;/p&gt;
 
-&lt;h3 id=&quot;20181030&quot;&gt;2018/10/30&lt;/h3&gt;
-&lt;p&gt;装了大半天的jekyll 本地部署还有难度的，其中遇到的坑也是不少。参考的教材资料是&lt;a href=&quot;&quot;&gt;&lt;/a&gt;,里面有对问题详细的解析啦，还有一个小建议，ruby 装不上最新版本的话，试下安装最新系统10.14 的XCODE，误打误撞也不知道是不是这样原因才可以安装成功的。安装不上还有一个神奇的方法。&lt;/p&gt;
+&lt;h3 id=&quot;20181030--糊里糊涂装jekyll&quot;&gt;2018/10/30  #糊里糊涂装jekyll&lt;/h3&gt;
+&lt;p&gt;装了大半天的jekyll 本地部署还有难度的，其中遇到的坑也是不少。参考的教材资料是&lt;del&gt;(ps.留着格式，忘记把网站放上来，找不到了，damn it)&lt;/del&gt;,里面有对问题详细的解析啦，还有一个小建议，ruby 装不上最新版本的话，试下安装最新系统10.14 的XCODE，误打误撞也不知道是不是这样原因才可以安装成功的。安装不上还有一个神奇的方法。&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo xxxxx
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -101,8 +206,29 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo install xxxx -n str/usr/local/bin
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;20181106&quot;&gt;2018/11/06&lt;/h3&gt;
-&lt;p&gt;上传初代icon&lt;/p&gt;
+&lt;h3 id=&quot;20181106--上传初代icon&quot;&gt;2018/11/06  #上传初代icon&lt;/h3&gt;
+&lt;p&gt;上传初代icon
+&lt;img src=&quot;http://pihu244kg.bkt.clouddn.com/2018-11-20-about-BY-Kevin.jpg&quot; alt=&quot;about-BY-Kevin&quot; /&gt;
+PS.这个是我名字陈炫坤的拼音首写字母CXK，演变而来的，看着挺丑的，但聊胜于无嘛~~~&lt;/p&gt;
+
+&lt;h3 id=&quot;20181119--申请七牛云图床&quot;&gt;2018/11/19  #申请七牛云图床&lt;/h3&gt;
+&lt;p&gt;申请七牛云图床，待审核，2018/11/20 申请七牛云图床成功，马上上网找教程，如下（有些教程的图片都不知道哪里去了😂😂😂）&lt;br /&gt;
+&lt;a href=&quot;https://sspai.com/post/43598&quot;&gt;为MarkDown写作软件MWeb配置七牛云图床空间 - 少数派&lt;/a&gt;
+上传测试上传图片成功&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;&lt;img src=&quot;http://pihu244kg.bkt.clouddn.com/2018-11-20-%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180510203458.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;20190814-图床奔溃&quot;&gt;2019/08/14 #图床奔溃&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;七牛云图床测试域名挂了，需要备案，备案时间20天左右，备案过程复杂还需要购买国内主机，遂放弃，直接将图床挂在github 上。&lt;/li&gt;
+  &lt;li&gt;更新微博链接&lt;/li&gt;
+  &lt;li&gt;更新icon&lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
         <pubDate>Mon, 29 Oct 2018 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2018/10/29/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
