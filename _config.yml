@@ -1,24 +1,24 @@
-﻿# Site settings
-title:Kevin's Blog
-SEOTitle: Kevin's Blog | To Be Better
+# Site settings
+title: Be Perfect
+SEOTitle: 陈炫坤的博客 | Be Perfect
 header-img: img/post-bg-desk.jpg
 email: 601255797@qq.com
-description: "Everyone will be better."
-keyword: "Blog, Kevin, Kevin's Blog, 炫坤的博客, 陈炫坤的博客, chenxuankun, 陈炫坤"
+description: "Every failure is leading towards success."
+keyword: "Blog, 炫坤的博客, 陈炫坤的博客, chenxuankun, 陈炫坤, iOS, Apple, iPhone"
 url: "http://MagicalKevin.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 # github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "To Be Better"
+sidebar-about-description: "做一个更加认真的自己"
 sidebar-avatar: /img/about-Kevin.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-# weibo_username:     潇洒-炫坤Chan   # https://www.weibo.com/3559075895/profile?topnav=1&wvr=6&is_all=1
+weibo_username:     潇洒-炫坤Chan   # https://www.weibo.com/3559075895/profile?topnav=1&wvr=6&is_all=1
 # zhihu_username:     username
 # github_username:    username
 # facebook_username:  username
@@ -86,7 +86,7 @@ kramdown:
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 2              # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 
 
@@ -97,12 +97,12 @@ service-worker: true
 
 
 # Friends
-#friends: [
-#    {
-#        title: "Apple",
-#        href: "https://apple.com"
-#    },{
-#        title: "Apple Developer",
-#        href: "https://developer.apple.com/"
-#    }
-#] 
+friends: [
+    {
+        title: "Apple",
+        href: "https://apple.com"
+    },{
+        title: "Apple Developer",
+        href: "https://developer.apple.com/"
+    }
+] 
