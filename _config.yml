@@ -1,10 +1,10 @@
 # Site settings
 title: Be Perfect
-SEOTitle: 陈炫坤的博客 | Be Perfect
+SEOTitle: Kevin's Blog| To Be Better
 header-img: img/post-bg-desk.jpg
 email: 601255797@qq.com
 description: "Every failure is leading towards success."
-keyword: "Blog, 炫坤的博客, 陈炫坤的博客, chenxuankun, 陈炫坤, iOS, Apple, iPhone"
+keyword: "Blog, Kevin, Kevin's Blog, 炫坤的博客, 陈炫坤的博客, chenxuankun, 陈炫坤, iOS, Apple, iPhone"
 url: "http://MagicalKevin.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 # github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
@@ -97,12 +97,12 @@ service-worker: true
 
 
 # Friends
-friends: [
-    {
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
-    }
-] 
+# friends: [
+#     {
+#         title: "Apple",
+#         href: "https://apple.com"
+#     },{
+#         title: "Apple Developer",
+#         href: "https://developer.apple.com/"
+#     }
+# ] 

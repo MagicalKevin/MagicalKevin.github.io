@@ -5,9 +5,61 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 14 Aug 2019 23:20:34 +0800</pubDate>
-    <lastBuildDate>Wed, 14 Aug 2019 23:20:34 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Aug 2019 21:34:16 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2019 21:34:16 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>夜来英语声，记得有多少（1/100）</title>
+        <description>&lt;h2 id=&quot;句子的基本成分&quot;&gt;句子的基本成分&lt;/h2&gt;
+
+&lt;h3 id=&quot;语法是什么&quot;&gt;语法是什么？&lt;/h3&gt;
+
+&lt;p&gt;语法是语言学的一个分支，研究按确定用法来运用的词类、词的曲折变化或表示相互关系的其他手段以及词在句中的功能和关系。&lt;/p&gt;
+
+&lt;h3 id=&quot;英语的五种句子结构&quot;&gt;英语的五种句子结构：&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#主   谓&quot;&gt;主   谓&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#主   谓   宾&quot;&gt;主   谓   宾&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#主   谓   双宾]&quot;&gt;主   谓   双宾&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#主   谓   宾   宾补&quot;&gt;主   谓   宾   宾补&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#主   系   表&quot;&gt;主   系   表&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;过段时间后补充内容
+### 主   谓
+### 主   谓   宾
+### 主   谓   双宾
+### 主   谓   宾   宾补
+### 主   系   表
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;句子的结构&quot;&gt;句子的结构&lt;/h2&gt;
+
+&lt;p&gt;句子结构有无规律？&lt;/p&gt;
+
+&lt;p&gt;天下所有句子的构成状态：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/picture/Study_English_sentence.png&quot; alt=&quot;Study_English_sentence&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;状语：时间、地点、副词&lt;/p&gt;
+
+&lt;p&gt;定语：修饰主语，&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 15 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/15/%E8%8B%B1%E8%AF%AD%E5%8F%A5%E5%AD%90%E7%BB%93%E6%9E%84-English/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/15/%E8%8B%B1%E8%AF%AD%E5%8F%A5%E5%AD%90%E7%BB%93%E6%9E%84-English/</guid>
+        
+        <category>English</category>
+        
+        <category>学习</category>
+        
+        <category>句子结构</category>
+        
+        
+      </item>
     
       <item>
         <title>定义鼠标按键的软件-XMouse</title>
