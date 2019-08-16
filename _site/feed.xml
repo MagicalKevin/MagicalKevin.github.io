@@ -5,9 +5,339 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 15 Aug 2019 21:34:16 +0800</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2019 21:34:16 +0800</lastBuildDate>
+    <pubDate>Sat, 17 Aug 2019 00:10:30 +0800</pubDate>
+    <lastBuildDate>Sat, 17 Aug 2019 00:10:30 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>教你如何做一名智能化设计师（长期更新内容及链接）</title>
+        <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;建立这篇文章的目的为了让自己的智能化设计能力得到提升，同时给大家提供一个学习的窗口，内容包括智能化设计里面的内容，CAD的使用，和相关的国家规范、要求的解析。&lt;/p&gt;
+
+&lt;p&gt;我的做事行为有其中一个点：简单做事。我自然会分享我学到的内容给到大家，网上已经有的，能用一张图就能说明的，我就用一张图说明，网上找不到比较好的图，如果我画起来比较简单我就画，复杂的话我就尽可能用文字描述了，因为要保持一天一更的话，没有太多的精力去完善这些内容。&lt;/p&gt;
+
+&lt;h2 id=&quot;计划&quot;&gt;计划&lt;/h2&gt;
+
+&lt;p&gt;我的计划分为三个部分：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;智能化设计（50篇）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;CAD的进阶使用教学（10篇）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;国家规范的重点解析（10篇）&lt;/p&gt;
+
+    &lt;p&gt;目前暂定以上的学习内容，标题是固定的，但是里面的内容会不断的更新升级迭代，把内容丰富和完整。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;智能化设计
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://chenxuankun.com/2019/08/16/弱电设计图纸设计规范/&quot;&gt;弱电设计图纸设计规范&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;安防&lt;/li&gt;
+      &lt;li&gt;BA&lt;/li&gt;
+      &lt;li&gt;综合布线（PDS Premises Distribution System）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CAD的进阶使用教学&lt;/li&gt;
+  &lt;li&gt;国家规范的重点解析
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://chenxuankun.com/2019/08/16/弱电专业术语/&quot;&gt;弱电专业术语&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;文章更新记录&quot;&gt;文章更新记录&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;序号&lt;/th&gt;
+      &lt;th&gt;日期&lt;/th&gt;
+      &lt;th&gt;内容&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;001&lt;/td&gt;
+      &lt;td&gt;2019.08.17&lt;/td&gt;
+      &lt;td&gt;1. 上传《国家规范的重点解析（1/10）-弱电专业术语》&lt;br /&gt;2. 上传《智能化设计（1/50）- 弱电设计图纸设计规范》&lt;br /&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</description>
+        <pubDate>Fri, 16 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/16/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%90%8D%E6%99%BA%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%BA%BA%E5%91%98/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/16/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%90%8D%E6%99%BA%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%BA%BA%E5%91%98/</guid>
+        
+        <category>智能化</category>
+        
+        <category>弱电</category>
+        
+        <category>设计</category>
+        
+        <category>CAD</category>
+        
+        <category>学习</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>智能化设计（1/50）</title>
+        <description>&lt;h1 id=&quot;弱电设计图纸设计规范&quot;&gt;弱电设计图纸设计规范&lt;/h1&gt;
+
+&lt;h2 id=&quot;图纸的分类分级&quot;&gt;图纸的分类分级&lt;/h2&gt;
+
+&lt;p&gt;图纸的分级遵从下列的原则&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;封面及目录&lt;/li&gt;
+  &lt;li&gt;智能化设计说明&lt;/li&gt;
+  &lt;li&gt;系统原理图&lt;/li&gt;
+  &lt;li&gt;主要材料清单&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;封面及目录&quot;&gt;封面及目录&lt;/h2&gt;
+
+&lt;h3 id=&quot;封面设计&quot;&gt;封面设计：&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设计一个图框，填入如下内容&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;项目名称：&lt;/strong&gt;居中、大字体、放置在中上位置&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;建设单位&lt;/strong&gt;：居中、小字体、放置中下位置&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;设计（编制）单位&lt;/strong&gt;：同上&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;日期&lt;/strong&gt;：同上&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;目录设计&quot;&gt;目录设计&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设计目录图库，格式自拟，规格一般为A3&lt;/li&gt;
+  &lt;li&gt;按下列格式命名和编排图纸(仅供参考)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;序号&lt;/th&gt;
+      &lt;th&gt;图纸内容&lt;/th&gt;
+      &lt;th&gt;图号&lt;/th&gt;
+      &lt;th&gt;规格&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;01&lt;/td&gt;
+      &lt;td&gt;图纸目录一&lt;/td&gt;
+      &lt;td&gt;RD-M-01&lt;/td&gt;
+      &lt;td&gt;A3&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;02&lt;/td&gt;
+      &lt;td&gt;图纸目录二&lt;/td&gt;
+      &lt;td&gt;RD-M-02&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;03&lt;/td&gt;
+      &lt;td&gt;图纸目录n&lt;/td&gt;
+      &lt;td&gt;RD-M-n&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;智能施工图设计说明（1）&lt;/td&gt;
+      &lt;td&gt;RD-SM-01&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;智能施工图设计说明（2）&lt;/td&gt;
+      &lt;td&gt;RD-SM-02&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;智能施工图设计说明（n）&lt;/td&gt;
+      &lt;td&gt;RD-SM-n&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;XX系统图&lt;/td&gt;
+      &lt;td&gt;RD-R-01&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;XX系统图&lt;/td&gt;
+      &lt;td&gt;RD-R-n&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;智能化主要材料参数清单（1）&lt;/td&gt;
+      &lt;td&gt;RD-QD-01&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;…&lt;/td&gt;
+      &lt;td&gt;智能化主要材料参数清单（2）&lt;/td&gt;
+      &lt;td&gt;RD-QD-01&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;n&lt;/td&gt;
+      &lt;td&gt;智能化主要材料参数清单（n）&lt;/td&gt;
+      &lt;td&gt;RD-QD-n&lt;/td&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;智能化设计说明&quot;&gt;智能化设计说明&lt;/h2&gt;
+
+&lt;p&gt;目录结构&lt;/p&gt;
+
+&lt;p&gt;一、设计依据&lt;/p&gt;
+
+&lt;p&gt;​	XXXXX&lt;/p&gt;
+
+&lt;p&gt;2、相关专业提供给的工程设计资料；&lt;/p&gt;
+
+&lt;p&gt;3、各市政主管部门对施工图的审批意见；&lt;/p&gt;
+
+&lt;p&gt;4、甲方提供的设计任务书及设计要求；&lt;/p&gt;
+
+&lt;p&gt;5、有关国家及地方的规范及标准；
+	&lt;code class=&quot;highlighter-rouge&quot;&gt;具体哪些系统对应哪些规范将在另外一篇文章转载&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;二、设计范围&lt;/p&gt;
+
+&lt;p&gt;1、本工程设计包括建筑红线以下智能化系统：&lt;/p&gt;
+
+&lt;p&gt;（1）xxxx系统&lt;/p&gt;
+
+&lt;p&gt;（2）xxxx系统&lt;/p&gt;
+
+&lt;p&gt;三、各子系统设计说明&lt;/p&gt;
+
+&lt;p&gt;以下的内容为各系统的分项说明，具体内容在另外一篇文章描述&lt;/p&gt;
+
+&lt;p&gt;1、 XXX系统&lt;/p&gt;
+
+&lt;p&gt;（1）系统技术要求&lt;/p&gt;
+
+&lt;p&gt;（2）系统设计说明&lt;/p&gt;
+
+&lt;p&gt;（3）系统功能&lt;/p&gt;
+
+&lt;h2 id=&quot;系统原理图&quot;&gt;系统原理图&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;按系统进行设计，具体内容及细节在之后进行更新&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;智能化主要材料参数清单&quot;&gt;智能化主要材料参数清单&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;----&lt;/code&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 16 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/16/%E5%BC%B1%E7%94%B5%E8%AE%BE%E8%AE%A1%E5%9B%BE%E7%BA%B8%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/16/%E5%BC%B1%E7%94%B5%E8%AE%BE%E8%AE%A1%E5%9B%BE%E7%BA%B8%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/</guid>
+        
+        <category>智能化</category>
+        
+        <category>弱电</category>
+        
+        <category>设计</category>
+        
+        <category>CAD</category>
+        
+        <category>学习</category>
+        
+        <category>智能化设计</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>国家规范的重点解析（1/10）</title>
+        <description>&lt;h3 id=&quot;弱电专业术语&quot;&gt;弱电专业术语&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;下列的出自机房设计规范&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;TO（信息点）：telecommunications outlet&lt;/p&gt;
+
+&lt;p&gt;CP（集合点）：consolidation polut&lt;/p&gt;
+
+&lt;p&gt;HD（水平配线设备）：horizontal distributor&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 16 Aug 2019 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/08/16/%E5%BC%B1%E7%94%B5%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/16/%E5%BC%B1%E7%94%B5%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD/</guid>
+        
+        <category>智能化</category>
+        
+        <category>弱电</category>
+        
+        <category>术语</category>
+        
+        <category>学习</category>
+        
+        <category>国家规范的重点解析</category>
+        
+        
+      </item>
     
       <item>
         <title>夜来英语声，记得有多少（1/100）</title>
