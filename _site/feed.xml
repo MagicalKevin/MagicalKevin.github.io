@@ -5,8 +5,8 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 19 Aug 2019 23:51:52 +0800</pubDate>
-    <lastBuildDate>Mon, 19 Aug 2019 23:51:52 +0800</lastBuildDate>
+    <pubDate>Wed, 21 Aug 2019 10:30:35 +0800</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2019 10:30:35 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -143,7 +143,7 @@
 
 &lt;p&gt;可以把物品分成季度、半年度、年度的&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/picture/IRead_Book_DSL_time.jpeg&quot; alt=&quot;物品在此时、当下，应该出现在需要它的地方&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/picture/Read_Book_DSL_time.jpeg&quot; alt=&quot;物品在此时、当下，应该出现在需要它的地方&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;先从整理头脑开始-断舍离的思考法则&quot;&gt;先从整理头脑开始-断舍离的思考法则&lt;/h2&gt;
 
@@ -622,7 +622,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;文档的复制、黏贴&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;CAD 的快捷键定义（失败了）&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;CAD 的快捷键定义&lt;/li&gt;
   &lt;li&gt;游戏的动作设置（没试过是否可行）&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -653,13 +653,29 @@
   &lt;li&gt;还有更多！&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;软件的设置&quot;&gt;软件的设置&lt;/h2&gt;
+&lt;h2 id=&quot;我的软件设置&quot;&gt;我的软件设置&lt;/h2&gt;
 
-&lt;p&gt;如下图所示，我需要的功能比较少，只是一个复制、黏贴的功能&lt;/p&gt;
+&lt;p&gt;我需要的功能比较少，鼠标只设置第四、五按钮，就是鼠标的侧边键。&lt;/p&gt;
+
+&lt;p&gt;日常使用只需一个&lt;strong&gt;复制&lt;/strong&gt;、&lt;strong&gt;黏贴&lt;/strong&gt;的功能，如下图所示的设置，&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;\picture\SoftwareTool_xmouse_set.png&quot; alt=&quot;SoftwareTool_xmouse_set&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;如上图所示的设置，鼠标第四、五按钮，就是鼠标的侧边键，ok，完成~~~&lt;/p&gt;
+&lt;p&gt;浏览器保持原有前进、后退的功能&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\picture\SoftwareTool_xmouse_set2.png&quot; alt=&quot;SoftwareTool_xmouse_set&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;CAD添加带基点复制（COPY）和移动（MOVE）这个两个常用的命令&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;\picture\SoftwareTool_xmouse_set3.png&quot; alt=&quot;SoftwareTool_xmouse_set&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;[tip]CAD之前对鼠标设置的ctrl+shift+c 和 ctrl+v 的命令完全没有效果，后面直接采用命令的形式反而成功了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;更新记录：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;20190820 增加浏览器、CAD的设置&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2019/08/14/%E5%AE%9A%E4%B9%89%E9%BC%A0%E6%A0%87%E6%8C%89%E9%94%AE%E7%9A%84%E8%BD%AF%E4%BB%B6-XMouse/</link>
