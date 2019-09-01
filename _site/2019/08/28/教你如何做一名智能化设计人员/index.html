@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Every failure is leading towards success.">
+    <meta name="keywords"  content="Blog, Kevin, Kevin's Blog, 炫坤的博客, 陈炫坤的博客, chenxuankun, 陈炫坤, iOS, Apple, iPhone">
+    <meta name="theme-color" content="#000000">
+    
+    <title>教你如何做一名智能化设计师（长期更新内容及链接） - Kevin's Blog| To Be Better</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Safari Webpage Icon    by-BY -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2019/08/28/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%90%8D%E6%99%BA%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%BA%BA%E5%91%98/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Be Perfect</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-intelligentize.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-intelligentize.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#智能化" title="智能化">智能化</a>
+                        
+                        <a class="tag" href="/tags/#弱电" title="弱电">弱电</a>
+                        
+                        <a class="tag" href="/tags/#设计" title="设计">设计</a>
+                        
+                        <a class="tag" href="/tags/#CAD" title="CAD">CAD</a>
+                        
+                        <a class="tag" href="/tags/#学习" title="学习">学习</a>
+                        
+                    </div>
+                    <h1>教你如何做一名智能化设计师（长期更新内容及链接）</h1>
+                    
+                    
+                    <h2 class="subheading">一个菜鸟设计师的成长之路</h2>
+                    
+                    <span class="meta">Posted by MagicalKevin on August 28, 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h2 id="目录">目录</h2>
+
+<p>[TOC]</p>
+
+<h2 id="前言">前言</h2>
+
+<p>建立这篇文章的目的为了让自己的智能化设计能力得到提升，同时给大家提供一个学习的窗口，内容包括智能化设计里面的内容，CAD的使用，和相关的国家规范、要求的解析。</p>
+
+<p>我的做事行为有其中一个点：简单做事。我自然会分享我学到的内容给到大家，网上已经有的，能用一张图就能说明的，我就用一张图说明，网上找不到比较好的图，如果我画起来比较简单我就画，复杂的话我就尽可能用文字描述了，因为要保持一天一更的话，没有太多的精力去完善这些内容。</p>
+
+<p>【2019.08.28】整体框架参考知乎前辈的文章<a href="https://zhuanlan.zhihu.com/p/22544076">《建筑电气入门经验吐血分享 - 知乎》</a>，不是高赞文章，但是内容真的非常详细，建议大家可以认真看下，对从事电气相关专业的人士，肯定是很有帮助的。基于此文章，对本篇文档进行大幅的增加，弱电也是电气的一部分，但是在做设计的时候智能化和供配电是分开的，由不同的专业来完成，但是智能化设计人员也要对供配电的知识进行了解。</p>
+
+<h2 id="第一部分画图前的准备">第一部分：画图前的准备</h2>
+
+<p>需要一个笔记本（纸质或电子，建议电子好搜索）来记录你在画图过程中的疑问，这对你快速成长绝对有帮助。</p>
+
+<p>另外最好备入门最常用的<strong>规范、图集、手册</strong>：</p>
+
+<p>1.民用建筑电气设计规范（一套），了解即可</p>
+
+<p>2.建筑电气常用数据，了解即可</p>
+
+<p>3.工业与民用配电设计手册，了解即可</p>
+
+<p>4.<strong><em>后续补充</em></strong></p>
+
+<p>另外说明以下两点：</p>
+
+<p>A.本人操作的软件情况：Autocad2018平台，天正电气T20 V5.0 二次开发软件。</p>
+
+<p>B.理论基础：至少学过电路原理，我入行前了解到的也不多，但自己哪方面的知识不足就要自学哦，亲们。在你正式画图前，我提的以下问题你是否都很清楚呢？</p>
+
+<p>1.弱电系统包含哪些内容？</p>
+
+<p>2.弱电系统设计有哪些计算？</p>
+
+<p>3.弱电系统会用到哪些设备？</p>
+
+<h2 id="第二部分如何开始画图">第二部分：如何开始画图</h2>
+
+<p>这部分将告诉大家电气设计的软件操作，以及最实用的命令操作。楼主尽量按照你可能接触到的先后顺序来讲解，每天将剖析1个命令。（每个人根据自己的兴趣爱好进行设置，楼主的只供参考，千万别膜拜！）</p>
+
+<p>（一）.如何对软件进行初始设置有利于你的绘图速度呢？</p>
+
+<p>1.十字光标大小：设置在50及以上；</p>
+
+<p>2.自定义鼠标右键：A.没有选定对象时单击右键表示-重复上一个命令；B.选定对象时单击右键表示-快捷菜单；C.正在执行命令时单击右键表示-确认</p>
+
+<p>3.画图时图例、线型的大小、宽度，以及导线之间的间距很重要，显示出来的大小与绘图比例有关系。一般设置导线的宽度为0.5（=导线宽度/绘图比例），汉字的高度至少为3，导线间距最小1mm，设备图块打印之后显示的大小=设备尺寸/绘图比例，一般不小于4。（若按打印比例1：100来计算）</p>
+
+<p>4.CAD左下角显示的那个比例有什么作用？绘图比例、出图比例的设置。</p>
+
+<p>5.最常用操作命令是否改为自己方便的操作了？首先来说下修改快捷键命令操作修改的原则。CAD和天正对常用操作对有相应的缩写命令操作，但是有些设定的不是很方便，所以我们需要根据自己的使用频率来调整。原则1：尽量不要修改软件默认的，而最好只是自己添加，这样方便与其他人沟通。如软件默认”V-MOVE”，你就不要将”COPY”命令的快捷操作改为”V”；原则2：满足左手键盘，右手鼠标习惯。即将快捷操作尽量改为你左手能方便敲击的地方。原则3：先将频率使用最高的用单个字母，其次用两个相同字母，再者用两个不同字母，最后使用三个相同字母。原则4：自己修改的命令操作不要太多，有些不常用的修改了时间久了自己也不一定记得。（最后我会贴出我自己调整的）。对CAD进行快捷键重新设置后，可不用重启CAD，直接在命令行输入REINIT（initialization）即可</p>
+
+<p>（二）.当你看到建筑发给你的图之后你大脑是否有这些想法？</p>
+
+<p>1.比例列表重置命名（-scalelistedit）：</p>
+
+<p>当你打开一张建筑图时，会不会觉得电脑很慢？这其中原因有很多，楼主并不知道这其中的奥秘，但是我知道建筑图中含有太多的比例会是你的电脑反映慢了很多，解决办法如下：在cad安装目录support文件下打开acad2008.lsp，并在文件最末端输入如下代码：(command”-scalelistedit”“reset”“y”“e”</p>
+
+<p>2.用软件需要养成的习惯：</p>
+
+<p>A经常手动保存（有太多的意外致使软件死掉）；B待定</p>
+
+<p>3.图层的管理命令：</p>
+
+<p>当你看到建筑发给你的图时，有没有种眼花缭乱的感觉？这时我们把与我们无关的图层内容删除或者隐藏。楼主一般不直接在建筑发过来的图上面进行电气设计，而是另存为一个文件，以免需要核对原版。图层管理中，天正电气有几个非常灵活的快捷操作，如果能用好，会使你的绘图速度提高10倍，这个绝对不是夸张哦。</p>
+
+<p>11,*CloseSelLayer（关闭选择层）</p>
+
+<p>22,*OpenLayer（根据设定打开层）</p>
+
+<p>33,*OpenAllLayer（打开全部层）</p>
+
+<p>44,*LockSelLayer（锁定选择层，此时锁定层颜色变淡）</p>
+
+<p>55,*UnLockSelLayer（解锁选择层）</p>
+
+<p>66,*OpenSelLayer（打开选择层）</p>
+
+<p>77,*sfxc（锁定未被选择层，此时锁定层颜色不变）</p>
+
+<p>00，*TCGL（天正图层控制工具条）</p>
+
+<p>对上面七个命令大家一定要认真体会，真的很管用！举个例子来说明：当你把准备画电气图时，请新建一个专门属于电气的图层，随后将建筑图层用”44”命令全部锁定，此时界面变淡且图元被锁定，这样在你以后的操作过程中就不会影响你的编辑，比如移动、拉伸等。暂时与你画图无关的图层可用”11”命令关闭。如果你在某一个（或者几个）图层中选择了某些图元，然后又希望打开全部图层且被选择图元状态不变（即依然处于被选择状态），此时操作顺序如下：先用”00”命令打开天正图层控制工具条，然后选择图元，然后选择工具条最下面那个”打开全部层”即可完成。</p>
+
+<p>4.软件反映慢？文件太大？解决方法1：</p>
+
+<p>先使用命令，后选择对象；方法2：使用”WBLOCK-写块”命令；方法3：文件清理命令”PURGE”。</p>
+
+<p>5.打开软件时，天正电气工具条不见了？”ctrl和=”同时按下。</p>
+
+<p>6.CAD的文档标签不见了？”ctrl和-“同时按下。</p>
+
+<p>7.如果你要查看CAD的操作记录？用”F2”调用命令的文本窗口。</p>
+
+<p>8.如果命令行（_commandline）不在了，就按Ctrl+9。</p>
+
+<p>9.天正电气CAD使用会经常需要查找、选择、匹配、替换等操作，这里将介绍4个命令，你要明白有的是针对图元的，有的是针对文字的。</p>
+
+<p>A：CAD中的find-FD（查找和替换）（针对–文字）；B：天正电气中的GLXZ-XZ（过滤选择）（针对-图元）；C：天正电气中的T83_TrepFind-FF（查找和替换）（针对–文字）；D：CAD中的QSELECT-QS（快速选择）（针对–文字、图元均可）。请各位自己多琢磨这4个命令的不同和有点，尤其对大型图操作时有利于提高你的速度。另外介绍下查找过程中经常会用到的通配符（？和*）的使用（需要是英文状态下哦）</p>
+
+<p>*（星号）：可匹配任意字符串，可在搜索字符中任意位置使用；</p>
+
+<p>？（问号）：可匹配任意单个字符，如？BC可匹配ABC、3BC等。</p>
+
+<p>10.打开某一文件时，是否会提示”未找到***字体”</p>
+
+<p>这时你需要选择字库中已有字体来替代”未找到的字体”，每当遇到这样的情况，我们可能可能都是用一种字体来替代所有未知字体，我就是用”HZTXT.SHX”来替代的，如果每次都还要从众多已有字体中选择恐怕有点慢，建议将CAD、天正电气软件安装文件的字体目录中的目标字体的名字改下，使之每次提示时均能排在第一，这样下次你就不用选了，直接不停的敲空格键就是了。</p>
+
+<p>11.当同一个文档中的局部部位需要核对时，可采用：</p>
+
+<p>视图-视口-两个视口</p>
+
+<p>12.fillet-F（修剪）命令的灵活运用：</p>
+
+<p>可实现两根线的相交，倒角等</p>
+
+<p>13.match-GA（格式刷）命令的应用</p>
+
+<p>14.进行复制操作时想要带基点操作旋转吗？天正命令TZKB（天正拷贝）搞定。</p>
+
+<p>（注意与T83_TdragCopy（自由复制）命令的区别，该命令不可自选基点。）</p>
+
+<p>15.当你从一个CAD文档拷贝到另外一个文档时，你是否还要在每次拷贝前做辅助线找基点呢？教你一招：直接用CTRL+SHIFT+C（带基点复制）搞定。</p>
+
+<p>16.进行移动操作时想要旋转吗？</p>
+
+<p>天正命令T83_TDragMove（自由移动）搞定。（可自己设定快捷命令）</p>
+
+<p>17.有时会根据图形的需要来变换世界坐标：</p>
+
+<p>UCS-OB-选择对象；还原世界坐标的操作：UCS-W-回车</p>
+
+<p>18.当需要将某一图形与一特定角度对齐时的操作：</p>
+
+<p>align-AG</p>
+
+<p>19.当回路编号很多而且是递增或者递减时，可以用如下命令：</p>
+
+<p>天正菜单-文字-递增文字（DZWZ-DZ）</p>
+
+<p>20.撤销、恢复的步骤数目可根据自己的需要来设定命令如下：</p>
+
+<p>UNDO、CTRL+Y</p>
+
+<p>21.当开启极轴、对象捕捉、对象追踪（极轴追踪增量角可设置为30°或者45°），然后可以不用开启正交命令（F8），同样也就不用开启和关闭正交命令了</p>
+
+<p>22.如果你用CAD绘图，对经常使用的图形，可以自己创建块，用WBLOCK(W)命令，而不是BLOCK(B)命令。(用block创建的”块”并不在硬盘上保存成单独的”块”文件，而只是保存在创建它的设计图文件里，因而只能在该设计图文件中使用，局限了它的用处；当你用wblock命令创建就可以单独使用了，同时可以在创建块之前定义它的属性。绘图-块-定义属性）</p>
+
+<p>23.如果你用天正CAD绘图，对经常使用的图形，可以用ZSB(造设备)命令，<天正菜单-平面布置-造设备>，<天正菜单-设置-图库管理>进入图库编辑，注意有系统图块和用户图块之分。</天正菜单-设置-图库管理></天正菜单-平面布置-造设备></p>
+
+<p>24.天正电气制作设备图块时，需要把制作好的用户设备图块拖到系统设备图块的位置，而且制作的块应由最小单元图形（直线、多短线、圆、弧形等）组成，最好不要由块、矩形等组合图形。</p>
+
+<p>25.【如果你想修改块咋办呀？】</p>
+
+<p>答：答案并不是让你就将块炸开，然后改完在合并重定义成块，况且你会发现有些块你是炸不开的。。。牛逼操作是这样的：块命令:REFEDIT（在位编辑）,按提示,修改好后用命令:REFCLOSE,确定保存,你原先的按改后也随之保存。(或者用如下操作：用块编辑器命令BEDIT(BE)按提示操作。)</p>
+
+<p>26.CAD中外部参照功能与插入块的区别？</p>
+
+<p>外部参照与插入块是两个完全不同的功能。插入”块”功能是已经定义了的”块”以新建图纸的一部分插入到当前文件中，它随着文件一起保存到当前文件中。而外部参照，顾名思义是在当前文件中浏览到到其他文件，就相当于在一张半透明的白纸上面工作时可以看到纸的下面还有有另外一幅图纸作为参考，他是与当前图纸没有任何关系的。接下来我们在详细说明一下：例如你要在一张白纸上写字，很容易写歪，最好有横竖的格子作为参照。方法一：每张纸上都打上格子；类似于平时绘图时使用的辅助线。方法二：先在一张上面打上格子，然后想办法复制到其他的纸上去。可以使用插入图块的方法（block、insert),虽然每张纸上有格子。方法三，先在一张上面打上格子，然后想在哪张纸上写字，把打好格子的纸衬在下面，可以得到同样的效果。这就是外部参照的方法命令”EXTER”。并且方法三的文件所占空间最少。</p>
+
+<p>27.关于修剪（trim）命令（或需要选择多个图形时）选择问题：</p>
+
+<p>输入trim命令后，在输入[栏选(F)/窗交(C)]即可实现：与支线相交的图元被选择，与矩形相交的图元被选择。</p>
+
+<p>28.如何重命名块的名字？</p>
+
+<p>用Rename命令。</p>
+
+<p>29.天正电气导线连接后，需要在导线上标注文字，可以用DXWZ(WZ)命令。</p>
+
+<p>但是不知道如何设置文字的高度？（在工具-选项-电气设定-标注文字设置文字高度）（G-R命令）</p>
+
+<p>30.当有多根导线相交需要打断时，可以用DXZS（导线置上）（ZS）或者DXZX（导线置下）命令，可自动打断。</p>
+
+<p>31.套建筑图时，一定要以建筑图为基准，然后在建筑图上电气图。</p>
+
+<p>（小心忽略块的重复定义带来不必要的麻烦）如有相同名称的块，删除后必须用PU命令清理。</p>
+
+<p>32.如何将文字样式修改为自己设置的文字样式呢？</p>
+
+<p>比如要将HZ3字体全部改为HZTXT样式，操作步骤如下：格式-文字样式-在左边样式中选择HZ3-中间部位SHX字体选择txt.shx,点取使用大字体，在大字体一栏选择HZTXT.SHX-应用-重置（RE）</p>
+
+<p>33.标注样式的应如何设置呢？</p>
+
+<p>曾出现过标注的文字显示很大，原因是标注样式中的设置不够合理，有时文字已经乘以出图比例（一般出图比例设置均为1），文字大小为3.5，当不能修改文字高度时，就将文字样式改为HZTXT.SHX，然后就可以对文字高度进行修改了。记得设置完之后一定要用RE命令哦。</p>
+
+<p>34.如何在天正CAD中完整插入表格（包含框线哦）？</p>
+
+<p>（可不是这样操作的：编辑-选择性粘贴），正确操作步骤如下：复制要粘贴的内容-表格-读入Excel-大功告成！</p>
+
+<p>35.如何将暖通、水专业的符号快速转换成电气的符号？</p>
+
+<p>打开水专业图纸，新建一个电气图层，双击要被替换的符号，然后在块编辑器中将要替换的符号改为电气所需要的符号，然后拷贝到电气专业图纸中即可。</p>
+
+<p>36.【镜像过来的字体保持不旋转咋办？】</p>
+
+<p>值为0时，可保持镜像过来的字体不旋转，值为1时，进行旋转。（用MIRRTEXT命令）</p>
+
+<p>37.【关掉这个层后，却还能看到这个层的某些物体的原因？】</p>
+
+<p>你所用的块(可能是别人的)，它本身是在不同的图层上作出来的。〔这本身就挺害人的！〕因此当你在对某一图层作’关闭’、’冻结’等操作时图形上似乎显示出命令无效。解决问题的办法是：要自己找到这个图块的原始文件，打开该图，并将其改为都在同一图层上，再将原始图块文件另改名存放。重新打开你的图形，插入你新改好的图块，放在某一空白处，然后就用这个新图块，全面替换原图块。这时候你才可以用’清理全图’(Purge)命令。这样一来就可以一劳永逸地解决了。（即：做块的时候只能在一个层上做(最好是0层)，可以用不同的颜色，别用不同的层！）</p>
+
+<p>38.从一个文档复制内容到另外一个文档时，小心”块的重复定义哦”把一个图块从图1复制到图2时，发现图块发生了变化，如大小、形状等，这是为什么呢？</p>
+
+<p>答：这是因为图2中已有图块的名称，而且这个图块就是你所看到的形状，^_^！</p>
+
+<p>39.如何将L画的线变为PL线？</p>
+
+<p>答：用pedit命令，编辑多段线，其中有合并（J）选项。</p>
+
+<p>40.怎样对两个图进行对比检查？</p>
+
+<p>可以把其中一个图做成块，并把颜色改为一种鲜艳颜色，如黄色，然后把两个图重迭起来，若有不一致的地方就很容易看出来</p>
+
+<p>41.在使用天正CAD过程中，我们经常需要将天正的某些图块统一替换为另外一种天正图块，我们可以选中要被替换的设备，右键单击选择设备替换，此时一定要注意的是：</p>
+
+<p>全部替换和局部替换。如果要将整个文档的该设备替换则可选择全部替换，如果只需要将部分替换，则根据自己需要选择范围然后局部替换。操作方法如下：A批量替换：</p>
+
+<p>运行替换命令</p>
+
+<p>这时命令行显示为：请选取图中要被替换的设备(多选)<替换同名设备>:</替换同名设备></p>
+
+<p>然后回车一次，</p>
+
+<p>命令行显示为：请选取图中要被替换的设备(单选)<退出>:</退出></p>
+
+<p>然后选择你需要被替换的设备，回车！B单个替换：运行替换命令</p>
+
+<p>这时命令行显示为：请选取图中要被替换的设备(多选)<替换同名设备>:</替换同名设备></p>
+
+<p>然后选择要被替换的设备，回车</p>
+
+<p>是否需要重新连接导线<Y>:回车即可！</Y></p>
+
+<p>42.浅谈CAD文档格式DWF和DWG的区别。</p>
+
+<p>DXF-DrawingExchangeFile(图形交换文件)，这是一种ASCII文本文件,它包含对应的DWG文件的全部信息,不是ASCII码形式,可读性差,但用它形成图形速度快.不同类型的计算机(如PC及其兼容机与SUN工作站具体不同的CPU用总线)哪怕是用同一版本的文件,其DWG文件也是不可交换的.为了克服这一缺点,AutoCAD提供了DXF类型文件,其内部为ASCII码,这样不同类型的计算机可通过交换DXF文件来达到交换图形的目的,由于DXF文件可读性好,用户可方便地对它进行修改,编程,达到从外部图形进行编辑,修改的目的。</p>
+
+<p>软件操作的命令基本到此结束了</p>
+
+<p>公布CAD改写命令：</p>
+
+<p>首先给大家解释一点：每个人都有自己不通的习惯，所以我所作的修改仅供参考，你可以根据自己的喜好进行调整。对于新手来说，对这些命令使用的频率以及修改后对绘图的提高，你的感触并不会太深，只有当你在自己操作的过程中，知道用什么命令来完成什么样的操作时，你才会有体会的，所以奉劝大家，对常用命令一定要反复练习。</p>
+
+<p>如果大家觉得好用，可以直接将我下面的修改放进安装目录下acad.pgp文件的最后即可，最好不要改变原内容。</p>
+
+<p>以下命令是新增加的修改命令。原命令库中的有些命令也很常用，这里我就没有列出来。希望大家多熟悉熟悉。</p>
+
+<p>AG,*ALIGN</p>
+
+<p>BR,*DDX</p>
+
+<p>A,*CIRCLE</p>
+
+<p>C,*COPY</p>
+
+<p>DA,*DIMALIGNED</p>
+
+<p>DD,*DIST</p>
+
+<p>X,*LINE</p>
+
+<p>FA,*LAYER</p>
+
+<p>V,*MOVE</p>
+
+<p>GA,*MATCHPROP</p>
+
+<p>FE,*MIRROR</p>
+
+<p>DX,*PLINE</p>
+
+<p>RW,*RECTANG</p>
+
+<p>XX,*XLINE</p>
+
+<p>fD,*find</p>
+
+<p>cs,*ucs</p>
+
+<p>qs,*qselect</p>
+
+<p>ref,*refedit</p>
+
+<p>q,*rotate</p>
+
+<p>1,*CloseSelLayer</p>
+
+<p>3,*OpenAllLayer</p>
+
+<p>4,*LockSelLayer</p>
+
+<p>5,*UnLockSelLayer</p>
+
+<p>2,*OpenSelLayer</p>
+
+<p>XG,*xgwz</p>
+
+<p>DDD,*xgwz</p>
+
+<p>ba,*rybz</p>
+
+<p>ab,*jxbz</p>
+
+<p>r,*rydx</p>
+
+<p>RB,*rydx</p>
+
+<p>G,*bdxs</p>
+
+<p>DS,*bdxs</p>
+
+<p>XZ,*GLXZ</p>
+
+<p>zd,*zdjs</p>
+
+<p>dq,*_Laymcur</p>
+
+<p>CC,*TZKB</p>
+
+<p>VV,*T83_TDragMove</p>
+
+<p>FF,*T83_TrepFind</p>
+
+<p>TT,*T83_TText</p>
+
+<p>DZ,*DZWZ</p>
+
+<p>YQ,*YQBZ</p>
+
+<p>CQ,*CQBZ</p>
+
+<p>YX,*YXDB</p>
+
+<p>ER,*pmbx</p>
+
+<p>DF,*DXLJ</p>
+
+<p>bx,*blx</p>
+
+<p>xd,*jdx</p>
+
+<p>CX,*CRYX</p>
+
+<p>FZ,*SBFZ</p>
+
+<p>XT,*YJCR</p>
+
+<p>WZ,*YXWZ</p>
+
+<p>ZS,*DXZS</p>
+
+<p>ZX,*DXZX</p>
+
+<p>QQ,*PURGE</p>
+
+<p>关于PGP文件添加新文件的补充：因文件原来默认的画圆命令是C（circle），而现在我已经把其定义为复制命令，所以大家需要将原文件中的命令行（C,*CIRCLE）删除即可。</p>
+
+<h2 id="第三部分15个理论专项击破">第三部分：15个理论专项击破</h2>
+
+<p>说下最近的感受。其实智能化设计这个行业，涉及到的方面非常的多，项目方案、项目概算、   除了具有相当的理论知识外，还需要具有这样的技能：将理论知识以图表的形式表达出来，这才会产生应用价值，要不你有太多的理论知识，别人也是看不到的。所以绘图的速度也是需要大家努力提高的。如果让你完成一个项目时，一个高手3天搞定，而你需要10天，而且还加班加点，这种情况除了你会觉得累之外，你还会觉得这份工作的薪价比不高。</p>
+
+<h3 id="第1个应急照明">第1个：应急照明</h3>
+
+<p>什么叫应急照明？应急照明的分类？为什么要有应急照明吗？应急照明的主要参数？如何设计？</p>
+
+<p>答案可参考资料：照明设计手册-第二版，民规-电气照明部分，技术措施-电气照明部分，INTERNET。有些手机用户不太方便，所以我把部分内容COPY下，方便大家有个初步认识。</p>
+
+<p>现代建筑的层数越来越高，占地面积越来越大，内部设施越来越完善，功能越来越齐全，所用设备和材料越来越新。一座建筑里面包括水平交通、垂直交通的内部流量也越来越大。这些建筑（包括地下部分）应不间断供电，而事实上各种灾害也是有可能发生的。如：火灾、爆炸和地震等灾害。发生这些灾害时，正常电源往往发生故障或必须断开电源，这时正常照明全部熄灭。为了保障人员及财产的安全，并对进行着的生产、工作及时操作和处理，有效地制止灾害或事故的蔓延，这时应随即投入应急照明。</p>
+
+<p>第2个：插座</p>
+
+<p>这个玩意在日常生活中也许很普遍了，但是当你对某个房间需要进行插座设计时，你需要思考些什么：房间的功能？插座的用途？插座个数？类型？安装位置是否合理？高度？</p>
+
+<p>答案：首先你要清楚哪些地方需要插座？哪些设备需要用电？可以参考下民规-P132。</p>
+
+<p>第3个：你知道弱电插座与强电插座的关系吗？</p>
+
+<p>在这个问题我最想说的是：弱电插座（电视、网络）和强电插座最好是在一面墙上，当然他们之间会有一定间距的。这个可以看下综合布线的施工图集。</p>
+
+<p>第4个：楼梯你会看吗？</p>
+
+<p>记得我第一次看到建筑图时，我有好多看不懂，心很燥。后来静下心来，决定一个部位一个部位的解决。其中楼梯我也是找了很多资料最后才看懂的。不过现在觉得有点傻，最好的方法是把你的疑问与建筑图的设计人沟通下，这样为你以后各专业方面的沟通也可以打下基础。</p>
+
+<p>第5个：电梯专讲</p>
+
+<p>电梯分为：客梯、货梯、消防、无障碍等，这一部分的理论知识可参考配三-P73【配三-P733”，是”工业与民用配电设计手册（第三版）】，或者是借助电梯厂家，这样让你对电梯这种产品与设计有一定联系，以后也不会那么陌生了。</p>
+
+<p>谈点心得：</p>
+
+<p>我个人觉得搞电这行真正有技术含量的人是：系统、理论已掌握，然后从事现场安装和调试的人，因为这个过程会出现很多意想不到的问题，这就需要用诊断了。不知道大家是怎样认为的？</p>
+
+<p>第6个：回路的导线根数</p>
+
+<p>回忆当初标导线根数的时候，很是纠结。这个并不是难点，但是对新人来说可能会与我有同样的疑惑，所以我特意拿出来谈下。直接上一个图吧。</p>
+
+<p>第7个：电线、电缆型号各字母的含义你都明白了吗？他们都有哪些型号？</p>
+
+<p>直接上整理好的结果。大家用芯体会去就是了。</p>
+
+<p>常用电缆、电线型号及名称：</p>
+
+<p>BYJ铜芯交联聚乙烯绝缘电线</p>
+
+<p>BYV额定电压300/500铜芯聚乙烯绝缘聚氯乙烯护套电缆</p>
+
+<p>NH-YJE铜芯交联聚乙烯绝缘低烟无卤护套耐火电力电缆</p>
+
+<p>NH-YJE22铜芯交联聚乙烯绝缘低烟无卤护套钢带铠装耐火电力电缆</p>
+
+<p>NH-YJV铜芯交联聚乙烯绝缘聚氯乙烯护套耐火型电力电缆</p>
+
+<p>NH-YJV22铜芯交联聚乙烯绝缘聚氯乙烯护套钢带铠装耐火型电力电缆</p>
+
+<p>WDZC-YJY交联聚乙烯绝缘聚烯烃护套无卤低烟阻燃C类电力电缆</p>
+
+<p>WDZA-YJY交联聚乙烯绝缘聚烯烃护套无卤低烟阻燃A类电力电缆</p>
+
+<p>DLD-KVV铜芯低烟低卤聚氯乙烯绝缘低烟低卤聚氯乙烯护套控制电缆</p>
+
+<p>RVS铜芯聚氯乙烯绝缘绞型连接用软电线</p>
+
+<p>RVVP铜芯聚氯乙烯绝缘、屏蔽、聚氯乙烯护套软电线</p>
+
+<p>ZA-RVV铜芯阻燃聚氯乙烯绝缘聚氯乙烯护套软电缆</p>
+
+<p>HYA铜芯实心聚烯烃绝缘挡潮层聚乙烯护套市内通信电缆</p>
+
+<p>SYWV-75-5电缆分配系统用物理发泡聚乙烯绝缘PVC护套同轴电缆</p>
+
+<p>SYWY-75-7电缆分配系统用物理发泡聚乙烯绝缘PE护套同轴电缆</p>
+
+<p>注：B（B）–第一个字母表示布电线，第二个字母表示玻璃丝编制。</p>
+
+<p>V（V）–第一个字母表示聚乙烯（塑料）绝缘，第二个字母表示聚乙烯护套</p>
+
+<p>E–聚烯烃绝缘</p>
+
+<p>Y–聚乙烯绝缘</p>
+
+<p>L（L）–铝，无L则表示铜</p>
+
+<p>A–复合导体（铜包铝）</p>
+
+<p>F（F）–复合型</p>
+
+<p>R–软线</p>
+
+<p>S–双绞</p>
+
+<p>X–绝缘橡胶</p>
+
+<p>K–控制线</p>
+
+<p>P–屏蔽线</p>
+
+<p>Z–阻燃</p>
+
+<p>N–耐火</p>
+
+<p>第8个：敷设部位和敷设方式你明白否？</p>
+
+<p>这部分参考图集09DX001的P68-69.</p>
+
+<p>第9个：电线电缆根数和截面与穿管管径你会搭配吗？</p>
+
+<p>今天有位兄弟私密我说：单位同事他们只要知道多大开关就知道要选多大电缆，向我寻求有什么方法可以达到这个境界？我没有回答。我想每个人开始都会羡慕别人，我也一样，感觉别人的经验的确很丰富。但是我学会了总结。这样我虽然慢点，但是也不至于每次都要花很长时间，然后每次选的时候都可以背一次，我用了很短的时间，我也可以达到那个境界了。</p>
+
+<p>这一部分的资料请参考常用数据手册。（最后我会公布我自己整理的快速搭配表。）</p>
+
+<p>第10个：桥架你用过吗？</p>
+
+<p>电线、电缆除了穿管之外，还可以走桥架，但是你知道该什么时候选用桥架吗？选什么型号的桥架？</p>
+
+<p>各位电气设计的新朋友，如果你有师傅带，千万不要让自己的思考停下来，尤其是当你师傅是45岁以上的年长者、而且是不太愿意接收新事物的人。如果是这种情况，你师傅设计基本都是靠经验值，而且软件操作的速度远可能跟不上现在高效的速度。因为他们习惯固守成规，这样对你的影响不可估计。这个时候一定要想方设法把他的经验值与你所认识的理论结合起来，转化为自己的东西才能为你所用。</p>
+
+<p>第11个：开关（断路器）、载流导体截面你会选吗？</p>
+
+<p>你知道断路器和载流导体的选用顺序和原则吗？断路器的主要功能是什么知道吗？</p>
+
+<p>对很多新人来说，认为只要算出计算电流就可以用这个数值来选载流导体了，其实并不是这样，需要注意一个选择顺序。除此之外还应明白，断路器是用来保护设备和导线的，即比如线路过载断路器应先动作，而不是断路器未动作而电线已烧坏。正确的顺序应该是：1算出计算电流2根据计算电流选断路器额定动作电流（很多有经验的人按照1.2倍的计算电流选，而规范说的是不小于计算电流即可，特殊情况除外）3根据断路器额定动作电流选择载流导体（这里需要校验敷设方式、敷设部位、穿管根数，为了能安全可靠，提高画图速度，一般按照最严重环境考虑）</p>
+
+<p>第12个：PE截面你会选吗？</p>
+
+<p>除了载流导体外，还需要选用PE截面，选用原则你知道吗？</p>
+
+<p>记得自己开始时看别人的图导线用5×16，而我按照断路器整定出来应选25平方的线，我直接将5×16改为5×25，结果被领导给圈了，^_^</p>
+
+<p>这部分的详情见配三-P495。</p>
+
+<p>第13个：三相负荷平衡你会吗？</p>
+
+<p>1只有单相负荷，大家都会算</p>
+
+<p>2只有三相负荷，大家也会算</p>
+
+<p>3只有线间负荷，大家要看书</p>
+
+<p>4既有线间负荷又有三相负荷，大家要好好看书（见配三-P12.13）</p>
+
+<p>经验0.2+理论0.2+情商0.2+学习力0.4=技术牛逼</p>
+
+<p>让这句话铭记于此。</p>
+
+<p>第14个：负荷分极</p>
+
+<p>要知道，并不是所有的负荷都是接在一个系统上的，他也有主次轻重之分的。负荷分级的原则及各级负荷的供电要求你知多少？</p>
+
+<p>注意双电源供电与双回路供电的区别。</p>
+
+<p>详情见民规3.2</p>
+
+<p>第15个：消防联动系统你真的很清楚吗？</p>
+
+<p>这一部分的内容估计能让每个新手都会头疼的。要完全弄个明白，最好的学习方法是：先熟悉下整个消防系统的构成，以及联动关系。然后找个消防厂家的产品样本（一般都会比较全的），把所有产品基本都熟悉下，然后自己总结哪些产品需要什么样的信号线，需要多少根，等等。</p>
+
+<p>第16个：低压系统的接地型式，uknow？</p>
+
+<p>低压系统的接地型式主要有TT、TN、IT，其中TN系统又分TN-S和TN-C-S，各位如果对这几个了解透彻的话可以参考配三手册-P879。</p>
+
+<p>第17个：中性点接地方式你知道几个？</p>
+
+<p>中性点接地方式根据供电电压等级可分为：接地和不接地。接地又可分为经消弧线圈接地、经高电阻接地、经低电阻接地。大家思考下：在什么情况下选用什么接地方式？各接地方式的区别如何？请参考配三P873。</p>
+
+<p>最后，小编给大家推荐几本参考书籍</p>
+
+<p>1、首先，理论扎实对于一名建筑电气设计师，是相当有好处的，所以本专业的课程，类似电路、模电、数电、电力电子、电力拖动、电磁场，对今后的工作都是有帮助的。</p>
+
+<p>2、马誌溪主编的《建筑电气工程》，在第一部分《基础篇》对各个专业均有介绍，而且特别强调出电气专业需要特别关注的内容。</p>
+
+<p>3、你一定需要一本有总论性质的教材，如果你的专业有相关的课程那自然是极好的，如果没有，那么依然推荐上边那本马誌溪主编的《建筑电气工程》。</p>
+
+<p>4、翁双安主编的《供配电工程设计指导》。</p>
+
+<p>以下几本规范是工作中最常用的：</p>
+
+<p>建筑设计防火规范</p>
+
+<p>高层民用建筑设计防火规范</p>
+
+<p>建筑照明设计规范</p>
+
+<p>供配电系统设计规范</p>
+
+<p>20kV及以下变电所设计规范</p>
+
+<p>低压配电设计规范</p>
+
+<p>建筑物防雷设计规范</p>
+
+<p>建筑物电子信息系统防雷技术规范</p>
+
+<p>火灾自动报警系统设计规范</p>
+
+<p>民用建筑电气设计规范</p>
+
+<p>住宅建筑电气设计规范</p>
+
+<p>建筑电气制图标准</p>
+
+<p>注：所有的规范都会附有条文说明，对条文进行更细致的解释或给出条文指定的依据，说明和条文同样重要，也要认真看。先求知其然，后求知其所以然。</p>
+
+<p>常用图集推荐：</p>
+
+<p>05SDX007建筑电气实践教学及见习工程师图册</p>
+
+<p>12DX011《建筑电气制图标准》图示</p>
+
+<p>12SDX101-2民用建筑电气设计计算及示例</p>
+
+<p>05SDX006建筑电气常见问题分析及图示</p>
+
+<p>08D800民用建筑电气设计与施工</p>
+
+<p>09X700智能建筑弱电工程设计与施工</p>
+
+<p>经典手册推荐：</p>
+
+<p>《工业与民用配电设计手册》</p>
+
+<p>《照明设计手册》</p>
+
+<p>参考书推荐：</p>
+
+<p>《全国民用建筑工程设计技术措施（电气）》</p>
+
+<p>王厚余《建筑物电气装置600问》</p>
+
+<p>徐兆丰《工业与民用建筑电气设计典型实例》</p>
+
+<p>赵振军《民用建筑电气设计审图要点及常见问题分析》</p>
+
+<p>李蔚《建筑电气设计常见及疑难问题解析》</p>
+
+<h2 id="计划">计划</h2>
+
+<p>我的计划分为三个部分：</p>
+
+<ul>
+  <li>
+    <p>智能化设计（50篇）</p>
+  </li>
+  <li>
+    <p>CAD的进阶使用教学（10篇）</p>
+  </li>
+  <li>
+    <p>国家规范的重点解析（10篇）</p>
+
+    <p>目前暂定以上的学习内容，标题是固定的，但是里面的内容会不断的更新升级迭代，把内容丰富和完整。</p>
+  </li>
+</ul>
+
+<h2 id="目录-1">目录</h2>
+
+<ul>
+  <li>智能化设计
+    <ul>
+      <li><a href="https://chenxuankun.com/2019/08/16/弱电设计图纸设计规范/">弱电设计图纸设计规范</a></li>
+      <li>安防</li>
+      <li>BA</li>
+      <li>综合布线（PDS Premises Distribution System）</li>
+    </ul>
+  </li>
+  <li>CAD的进阶使用教学</li>
+  <li>国家规范的重点解析
+    <ul>
+      <li><a href="https://chenxuankun.com/2019/08/16/弱电专业术语/">弱电专业术语</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>参考资料来源：</strong></p>
+
+<ol>
+  <li><a href="https://zhuanlan.zhihu.com/p/22544076">建筑电气入门经验吐血分享 - 知乎</a></li>
+  <li></li>
+</ol>
+
+<h2 id="文章更新记录">文章更新记录</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>序号</th>
+      <th>日期</th>
+      <th>内容</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>2019.08.17</td>
+      <td>1. 上传《国家规范的重点解析（1/10）-弱电专业术语》<br />2. 上传《智能化设计（1/50）- 弱电设计图纸设计规范》<br /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>2019.08.28</td>
+      <td>结合知乎上的文章《建筑电气入门经验吐血分享》，参考前辈的学习经验，对文章进行大幅度的增添</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/26/%E6%98%AF%E5%90%A6%E9%9D%A2%E5%AF%B9%E4%BC%98%E7%A7%80%E7%9A%84%E8%87%AA%E5%B7%B1/" data-toggle="tooltip" data-placement="top" title="是否要面对优秀的自己">
+                        Previous<br>
+                        <span>是否要面对优秀的自己</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/08/28/%E5%BC%B1%E7%94%B5%E7%B3%BB%E7%BB%9F%E5%A4%A7%E8%A7%A3%E6%9E%90/" data-toggle="tooltip" data-placement="top" title="弱电系统大解析">
+                        Next<br>
+                        <span>弱电系统大解析</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+                <!--Gitalk评论start  -->
+                
+                <!-- Gitalk end -->
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#博客" title="博客" rel="2">
+                                    博客
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#学习" title="学习" rel="12">
+                                    学习
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#改变" title="改变" rel="2">
+                                    改变
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#English" title="English" rel="2">
+                                    English
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#智能化" title="智能化" rel="4">
+                                    智能化
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#弱电" title="弱电" rel="4">
+                                    弱电
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#设计" title="设计" rel="2">
+                                    设计
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#CAD" title="CAD" rel="2">
+                                    CAD
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
+        // anchors.options = {
+        //   visible: 'always',
+        //   placement: 'right',
+        //   icon: '#'
+        // };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <!-- add jianshu add target = "_blank" to <a> by BY -->
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/潇洒-炫坤Chan">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Be Perfect 2019
+                    <br>
+                    Theme on <a href="">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=&repo=.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script type="text/javascript">
+    if(navigator.serviceWorker){
+        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {console.log('Service Worker Registered. ', registration)})
+            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
+    }
+</script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/apple-touch-icon.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

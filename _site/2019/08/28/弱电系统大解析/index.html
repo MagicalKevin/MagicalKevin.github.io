@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Every failure is leading towards success.">
+    <meta name="keywords"  content="Blog, Kevin, Kevin's Blog, 炫坤的博客, 陈炫坤的博客, chenxuankun, 陈炫坤, iOS, Apple, iPhone">
+    <meta name="theme-color" content="#000000">
+    
+    <title>弱电系统大解析 - Kevin's Blog| To Be Better</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Safari Webpage Icon    by-BY -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2019/08/28/%E5%BC%B1%E7%94%B5%E7%B3%BB%E7%BB%9F%E5%A4%A7%E8%A7%A3%E6%9E%90/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Be Perfect</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-intelligentize.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-intelligentize.jpg')
+    }
+
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#智能化" title="智能化">智能化</a>
+                        
+                        <a class="tag" href="/tags/#弱电" title="弱电">弱电</a>
+                        
+                        <a class="tag" href="/tags/#学习" title="学习">学习</a>
+                        
+                    </div>
+                    <h1>弱电系统大解析</h1>
+                    
+                    
+                    <h2 class="subheading">揭开弱电系统的神秘面纱</h2>
+                    
+                    <span class="meta">Posted by MagicalKevin on August 28, 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<h2 id="目录">目录</h2>
+
+<p>[TOC]</p>
+
+<h2 id="弱电系统包括哪些内容">弱电系统包括哪些内容</h2>
+
+<h3 id="楼宇自控系统">楼宇自控系统</h3>
+
+<p>楼宇自控系统采用集散控制系统，本系统使管理者在中央控制室内就可实现对整座大楼内机电设备的监控和相应的各种现代化管理。楼宇自控系统中央管理工作站作为大楼的机电设备运行信息的交汇与处理中心，对汇集的各类信息进行分析、归类、处理和判断，采用最优化的控制手段，对各设备进行分布式监控和管理，使各子系统和设备始终处于有条不紊、协调一致的高效、有序的状态下运行。</p>
+
+<p>系统作用：分散控制，集中管理，节能，降耗的作用。</p>
+
+<p>监控范围：对空调系统、新风机组、制冷机组、冷却塔、风机盘管、照明回路、变配电、电梯等系统进行信号采集和监测、控制，实现设备管理系统自动化。</p>
+
+<p>达到效果：有效节省电能、大量节省人力、延长设备使用寿命、有效加强管理、保障设备与人身的安全。
+总体来讲，一座大楼中的各种设备（如冷水机组、空调机组、电梯等）都是消耗产品，设备每天要消耗电能，要花钱维护保养，总有一天会报废，业主的投资是无法收回的，惟有楼宇自控系统能给业主节约资金，也就是能回收资金的设备。</p>
+
+<h3 id="智能物业管理系统">智能物业管理系统</h3>
+
+<p>（1）停车场管理系统<br />
+（2）智能一卡通系统<br />
+（3）广播及背景音乐系统  <br />
+（4）三表远传系统</p>
+
+<h3 id="网络信息服务系统">网络信息服务系统</h3>
+
+<p>（1）卫星接收及有线电视系统<br />
+（2）综合布线系统<br />
+（3）宽带网络信息服务系统</p>
+
+<h3 id="消防报警系统">消防报警系统</h3>
+
+<h3 id="综合布线系统">综合布线系统</h3>
+
+<p>综合布线系统的设计范围包括电话系统和计算机系统两部分。系统提供高速和高宽带的传输能力，能满足楼内信息传输的需要，尤其是数据系统的高速数据传输的要求，并且能够适应现代和未来技术的发展，保证15—20年不落后。</p>
+
+<p>综合布线系统具备运行的高度可靠性，对于特别重要的部分，采用冗余备份来保证线路的万无一失。能适应各种计算机网络体系结构的需要。设备变迁时有高度的灵活性、管理的方便性。产品的通用性满足各种网络产品及通信系统的要求。</p>
+
+<p>综合布线系统中除去固定于建筑物内的水平线缆外其所有的接插件都是积木式的标准件，系统的扩充升级容易。保护用户一次性投资，维护费用极低，使整体投资达到最少。</p>
+
+<h3 id="计算机网络系统">计算机网络系统</h3>
+
+<p>在智能建筑中，今后的通信自动化、办公自动化和管理自动化将是非常重要的组成部分，无论是高速传输处理语音、文字、图像、数据，还是便捷处理日常事物及管理决策都离不开高性能计算机网络系统的支持。
+以往需要独立的多种网络来承担各不相同的通信服务，而在我们的解决方案中由一个共同的核心基础设施集中提供各种基本服务，既使效率达到最大，又简化了网络的管理；并且传统的数据网络是建立在“尽最大的努力”提供服务的简单模型之上，今天应用的“智能”数据网络则是建立在按客户需要提供不同级别通信服务的智能模型之上，能够根据各种应用和用户的具体要求调整所提供的带宽和服务质量。“千兆交换作主干，百兆交换到桌面”成为网络基础设施的基本构架，在此基础上结合光纤到桌面和无线网络方式，组成现代化的计算机网络系统。</p>
+
+<h3 id="安全防范系统">安全防范系统</h3>
+
+<p>安全防范系统包括</p>
+<ul>
+  <li>闭路电视监控系统</li>
+  <li>防盗报警系统</li>
+  <li>门禁系统</li>
+  <li>电子巡更系统</li>
+  <li>周界防范系统等</li>
+  <li>对讲系统</li>
+</ul>
+
+<p>采用多种方式构成大楼多方位、立体化的综合保安防护体系，保证大楼内设备、人员的安全。它能够在第一时间内做出相应判断和动作，并以视觉、听觉或其他感受方式告知管理与保安人员事故现场所发生的各种情况，使之对安全事故现场有效地做出快速反应。并将所发生事件的全过程以视频记录方式进行备份记录，为处理事故现场提供了确实可靠的法规依据。</p>
+
+<h3 id="公共广播系统">公共广播系统</h3>
+
+<p>公共广播系统具有背景音乐广播、公共事务广播、火灾事故广播功能。</p>
+
+<p>背景音乐的主要作用是掩盖噪声并创造一种轻松和谐的听觉气氛，由于扬声器分散均匀布置，无明显声源方向性，且音量适宜，不影响人群正常交谈，是优化环境的重要手段之一。公共事务广播系统可以起到宣传、播放通知、找人等作用。公共广播的火灾事故广播功能作为火灾报警及联动系统在紧急状态下用以指挥、疏散人群的广播设施，在建筑弱电的设计中有举足轻重的作用。本功能要求扩声系统能达到需要的声场强度，以保证在紧急情况发生时，可以利用其提供足以使楼内可能涉及区域的人群能清晰的听到警报、疏导的语音。</p>
+
+<h3 id="卫星及有线电视系统">卫星及有线电视系统</h3>
+
+<p>卫星及有线电视系统设计采用邻频传输技术，前端、放大器和信号分配设备选用国内外先进技术水准的产品，使整个系统在今后五年至十年内，根据社会发展的需要，有充分发展的余地。为满足将来电子商务的需要，在系统中增加回传带宽。考虑未来数字技术的发展，在数据通讯中，划出一部分作数字电视传输，并可用作VOD视频点播。</p>
+
+<h3 id="会议系统">会议系统</h3>
+
+<p>现代化的智能建筑中一般拥有比较多的会议场所，有专门用于会议场所的会议室、报告厅，还有可以作为临时会议场所的多功能厅等。</p>
+
+<p>会议场所主要用于举行各种会议或报告，在功能上满足数字会议管理及同声传译、灯光控制、会议讨论、即席发言、会议扩声、视频显示等要求。既能满足内部会议的需要，也可以满足高级别的电子会议的需要，如对外直播的会议、记者招待会、国际性大型会议等。</p>
+
+<h3 id="数字程控交换机系统">数字程控交换机系统</h3>
+
+<p>智能建筑中采用的程控交换机应是高起点、高标准、国际一流的全数字程控交换机，应能满足大楼范围内的语音、数据、图象、窄带、宽带多媒体业务。 数字程控交换机应用范围包括以下内容：</p>
+
+<p>语音通信：国际、国内及本地话音通信并能通过本设备可以实现多功能服务，提高通信能力和服务质量。</p>
+
+<p>传真通信：通过数字程控交换机，可连接各类传真机，大大提高文本传真的质量。</p>
+
+<p>综合业务数字网通信：通过数字程控交换机实现综合业务数字网通信业务。</p>
+
+<p>语音邮箱服务：通过交换机内语音邮箱，自动存储用户话音，交换机用户可授权提取语音信箱里的内容，提高大楼通信自动化的水准。</p>
+
+<h3 id="一卡通系统">一卡通系统</h3>
+
+<p>通过一卡通系统可以实现对相关人员的考勤管理、门禁管理、内部电子消费管理、停车管理等功能的综合管理。形成完整的一卡通用解决方案。</p>
+
+<p>结合各建筑的特点，一卡通系统可以实现以下几方面的功能：</p>
+
+<p>1、  身份管理；
+2、  门禁管理
+3、  考勤管理；
+4、  借阅管理；
+5、  停车场管理；
+6、  消费管理等；
+具体实施时，可根据实际情况一起或分步实施。</p>
+
+<h3 id="电子信息显示系统信息发布系统">电子信息显示系统（信息发布系统）</h3>
+
+<p>现代社会已进入信息时代，信息传播占有越来越重要的地位，同时人们对于视觉媒体的要求也越来越高，要求传播媒体传播信息直观、迅速、生动、醒目。</p>
+
+<p>电子信息显示系统的作用是一方面可以播放大楼事务介绍、实事新闻、通知等，会起到良好的宣传效果，另一方面可以配合音视频设备播放电视、LD、VCD、DVD、录像等，起到装饰环境、烘托气氛的作用。
+另外，还可以充分利用大楼的社会地位和影响，承接各种广告业务，通过电子信息显示系统播放多媒体广告，起到为业主创收的作用。</p>
+
+<h3 id="电子信息查询系统">电子信息查询系统</h3>
+
+<p>电子信息查询系统的展示内容可以包括大楼总体情况介绍、内部功能区分布、主要部门联系电话等。还可以根据今后的实际需要添加内容，如提供广告或其它服务信息等。并可具有图象、文字、声音、视频等多媒体方式。</p>
+
+<p>电子信息查询系统采用触摸查询一体机，使用先进的声波触摸技术，输入信息十分简单、方便、迅捷，与其它多媒体技术配合运用，使用者就可以通过丰富多彩的触摸界面进行轻松活泼的人机交互；再加上其信息量大而全，且检索信息速度快，能满足不同用户的各种信息查询需求。</p>
+
+<h3 id="中央集成管理系统">中央集成管理系统</h3>
+
+<p>大楼的中央集成是将建筑物内的若干个既相对独立又相互关联的系统组成具有一定规模的大系统的过程，这个大系统不是各个子系统的简单堆积，而是把现有的分离设备、功能、信息组合到一个相互关联的、统一的、协调的系统之中，从而能够把先进的高技术成果，巧妙灵活地运用到现有的智能建筑系统中，以充分发挥其更大的作用和潜力。</p>
+
+<p>中央集成管理系统工程分成综合信息系统集成(IBMS)  实时楼宇自动化和监控专业子系统集成(BMS)两个层次。在工程实施中分步实施。与工程建设同步实施BMS系统集成，在BMS系统实施中考虑与IBMS系统接口的需要。我公司以实现国内一流智能化系统为目标，以网络集成、数据集成、软件界面集成、功能集成等一系列系统集成技术为基础，运用标准化、模块化以及系列化的开放性设计思想，以我公司自行开发的中央集成管理系统软件QHTF  BMS为平台，以综合布线系统、计算机网络系统及其他综合通讯系统构架信息传输网络，将大楼弱电系统中楼宇自控系统、综合保安管理系统以及消防报警系统（如有）集成为智能化的BMS弱电监控与管理系统。此系统允许用户最大限度利用微软操作系统下的应用软件，或结合其他套装软件实现中央集成管理系统IBMS的后续开发应用。</p>
+
+<h3 id="总体功能描述">总体功能描述</h3>
+
+<p>通过弱电子系统的有机组合，大楼智能化弱电系统的总体功能主要可以从以下几个方面来体现：
+安全</p>
+<ul>
+  <li>保证大楼内的所有机电设备的正常运行</li>
+  <li>为大楼内人员提供人身、财产安全保障 舒适</li>
+  <li>为大楼内部用户提供舒适、便捷的工作、生活环境。</li>
+  <li>提供大楼内适宜的空气温度、相对湿度和空气洁净度等环境参数指标。</li>
+  <li>保障水、电、冷、热等能源供应。</li>
+  <li>提供优美的背景音乐和信息显示，营造舒适怡人的氛围。 高效</li>
+  <li>满足大楼内部各部门之间和与外部互通信息，实现信息资源共享的需要。</li>
+  <li>大楼使用者能及时了解大楼内部信息。</li>
+  <li>大楼使用者能及时得到物业服务。</li>
+  <li>为大楼管理者提供物业管理手段。 节能</li>
+  <li>延长设备使用寿命。</li>
+  <li>节省能源。</li>
+  <li>节省人员。</li>
+  <li>提高设备利用率</li>
+</ul>
+
+<p>电力应用按照电力输送功率的强弱可以分为强电与弱电两类。建筑及建筑群用电一般指交流220V50Hz及以上的强电。主要向人们提供电力能源，将电能转换为其他能源，例如空调用电，照明用电，动力用电等等。智能建筑中的弱电主要有两类，一类是国家规定的安全电压等级及控制电压等低电压电能，有交流与直流之分，交流36V以下，直流24V以下，如24V直流控制电源，或应急照明灯备用电源。另一类是载有语音、图像、数据等信息的信息源，如电话、电视、计算机的信息。人们习惯把弱电方面的技术称之为弱电技术。可见智能建筑弱电技术基本涵义仍然是原来意义上的弱电技术。只不过随着现代弱电高新技术的迅速发展，智能建筑中的弱电技术应用越来越广泛。如智能消防系统，监控系统，计算机网络，楼宇自控，智能广播等等。弱电技术的应用程度决定了智能建筑的智能化程度。</p>
+
+<p>一般情况下，弱电系统工程指第二类应用。主要包括：１、电视信号工程，如电视监控系统，有线电视。２、通信工程，如电话。３、智能消防工程。４、扩声与音响工程，如小区的中背景音乐广播，建筑物中的背景音乐。５、综合布线工程，主要用于计算机网络。随着计算机技术的飞速发展，软硬件功能的迅速强大，各种弱电系统工程和计算机技术的完美结合，使以往的各种分类不再像以前那么清晰。各类工程的相互融合，就是系统集成。</p>
+
+<p>电子类人们习惯分为强电（电力）和弱电（信息）两部分。两者既有联系又有区别，一般来说强电的处理对象是能源（电力），其特点是电压高、电流大、功率大、频率低，主要考虑的问题是减少损耗、提高效率，弱电的处理对象主要是信息，即信息的传送和控制，其特点是电压低、电流小、功率小、频率高，主要考虑的是信息传送的效果问题，如信息传送的保真度、速度、广度、可靠性。一般来说，弱电工程包括电视工程、通信工程、消防工程、保安工程、影像工程等等和为上述工程服务的综合布线工程。弱电是针对强电而言的。强电=（380/220）、高压不管在电力系统中，36v以下的电压称为安全电压，1kv以下的电压称为低压，1kv以上的电压称为高压，直接供电给用户的线路称为配电线路，如用户电压为380/220v，则称为低压配电线路，也就是家庭装修中所说的强电（因它是家庭使用最高的电压）。强电一般是指交流电电压在24V以上。如家庭中的电灯、插座等，电压在110V~220V。家用电气 中的照明灯具、电热水器、取暖器、冰箱、电视机、空调、音响设备等用电器均为强电电气设备。</p>
+
+<p>智能化系统为建筑设备监控系统、安全防范系统、通讯网络系统、信息网络系统、火灾自动报警及消防联动等系统，以集中监视、控制和管理为目的构成的综合系统；家庭内各种数据采集、控制、管理及通讯的控制或网络系统等线路，则称为智能化线路（也就是家庭装修中所说的弱电）。弱电一般是指直流电路或音频、视频线路、网络线路、电话线路，直流电压一般在24V以内。家用电气中的电话、电脑、电视机的信号输入（有线电视线路）、音响设备（输出端线路）等用电器均为弱电电气设备</p>
+
+<h2 id="需要了解的其他系统">需要了解的其他系统</h2>
+
+<ol>
+  <li>
+    <p>供配电系统，其中含电力、照明、线路敷设、电气设备选型等内容。</p>
+  </li>
+  <li>
+    <p>防雷接地系统。</p>
+  </li>
+  <li>消防系统（这部分有点不好搞的哦）。</li>
+  <li>其他系统（刚入门的可以先不了解）</li>
+</ol>
+
+<h2 id="弱电系统设计有哪些计算">弱电系统设计有哪些计算</h2>
+
+<p>照度计算、电气负荷计算，存储设备容量计算，交换机选型计算等……</p>
+
+<p>后续慢慢更新</p>
+
+<p><strong>下面推荐几个线上计算网站：</strong></p>
+
+<p><a href="https://solution.homedo.com/tools/cal/_cal_201512291630329336_shtml?param=0,0">功能设备输出总电功率 计算器 公共广播 弱电工程设计计算器_河姆渡智能建筑方案馆</a></p>
+
+<p><a href="http://www.zh-hm.site/zaixiangongju/76-25.html">海康安防计算器-在线工具-专业智能化系统集成及解决方案提供商</a></p>
+
+<p><a href="http://www.sohu.com/a/129778343_662774">安防人专用的计算器</a></p>
+
+<h2 id="弱电系统会用到哪些设备">弱电系统会用到哪些设备</h2>
+
+<p>（十）.建筑设备自动化系统</p>
+
+<p>o建筑设备监控系统：中央站DDC控制器</p>
+
+<p>o智能家居控制系统：智能家居控制器</p>
+
+<p>o照明设施控制系统：系统模块</p>
+
+<p>o停车场管理系统：控制器</p>
+
+<p>（十一）.安全防范系统</p>
+
+<p>o电视监视系统：摄像机镜头防护罩电动云台手动云台监视器录像机画面分割处理器视频切换器</p>
+
+<p>o楼宇对讲系统：单元门口机可视室内分机非视室内分机</p>
+
+<p>o入侵报警系统：报警控制器微波和被动红外复合入侵探测器主动红外探测器被动红外探测器微波多普勒探测器振动入侵探测器磁开关探测器被动式玻璃破碎探测器</p>
+
+<p>o门禁系统：控制器</p>
+
+<p>（十二）.通讯网络系统</p>
+
+<p>o综合布线系统：普通型4对8芯线缆屏蔽型4对8芯线缆大对数线缆多模光纤单模光纤吹光纤系统普通墙上安装式跳线架机柜式安装跳线架光纤跳线架普通型跳线屏蔽型跳线光纤跳线RJ45信息插座光纤信息插座多媒体信息插座专用工具</p>
+
+<p>o通讯电缆：电话线</p>
+
+<p>o计算机网络设备：集线器网络交换机路由器网关防火墙</p>
+
+<p>o程控数字交换设备：程控数字交换设备</p>
+
+<h2 id="建筑电气会用到的设备分类">建筑电气会用到的设备分类</h2>
+
+<p>（一）.高压配电装置及高压电器</p>
+
+<p>o高压配电装置：金属铠装式移开式高压开关柜（KYN）间隔移开式高压开关柜（JYN）箱式固定式高压开关柜（XGN）箱式环网式高压开关柜（HXGN）</p>
+
+<p>o高压电器：高压断路器</p>
+
+<p>（二）.低压配电装置及低压电器</p>
+
+<p>o低压配电装置：抽出式低压柜照明配电箱</p>
+
+<p>o低压断路器、剩余电流保护器：框架式断路器（ACB）塑料外壳式断路器（MCCB）微型断路器剩余电流保护器</p>
+
+<p>o接触器、电机起动器：交流接触器全压电机启动器交流减压电机启动器（星三角、自耦）软启动综合启动器变频电机启动器</p>
+
+<p>o电源切换系统及元器件：PC级自动转换开关电器CB级自动转换开关电器</p>
+
+<p>o热继电器、电动机保护器：热继电器电动机保护器</p>
+
+<p>o隔离器、隔离开关、熔断器组合电器：交流型隔离开关熔断器组合电器</p>
+
+<p>o电工测量及自动控制仪表：交流电能表电压表电流表电压互感器电流互感器</p>
+
+<p>（三）.变压器及电源系统</p>
+
+<p>o配电变压器：干式变压器油浸式变压器</p>
+
+<p>o预装式变电站：户外式预装变电站</p>
+
+<p>o应急电源装置：普通型柴油发电机组在线互动式UPS直流EPS交流照明类EPS交流动力类EPS交流动力变频类EPS</p>
+
+<p>o直流电源屏：直流电源屏</p>
+
+<p>（四）.防雷及接地装置</p>
+
+<p>o防雷及过电压保护装置：避雷针单相电源电涌保护器三相电源电涌保护器信号线路电涌保护器</p>
+
+<p>（五）.照明开关、插座</p>
+
+<p>o普通照明开关：</p>
+
+<p>o带指示灯照明开关：</p>
+
+<p>o防溅型照明开关：</p>
+
+<p>o普通单相插座：</p>
+
+<p>o单相空调专用插座：</p>
+
+<p>o单相带开关插座：</p>
+
+<p>o单相防溅型插座：</p>
+
+<p>o地面插座：</p>
+
+<p>o三相插座：</p>
+
+<p>o延时开关：</p>
+
+<p>（六）.照明装置及调光设备</p>
+
+<p>o电光源：白炽灯环形荧光灯直管荧光灯紧凑型荧光灯卤钨灯荧光高压汞灯金属卤化物灯低压钠灯高压钠灯LED灯无极灯光纤灯</p>
+
+<p>o照明灯具：投光灯具航空障碍灯具吸顶灯具嵌入式灯具筒灯具路灯及庭院灯具照明反光板</p>
+
+<p>o照明配件：电子镇流器</p>
+
+<p>o照明节电装置：</p>
+
+<p>（七）.输、配电器材</p>
+
+<p>o电线、电缆：矿物绝缘电缆通用电线铜（铝）芯聚氯乙烯钢带铠装聚氯乙烯护套电力电缆（VV、VV22、VLV、VLV22）铜（铝）芯交联聚乙烯绝缘聚氯乙烯护套电力电缆（YJV、YJLV）</p>
+
+<p>o母线：母线</p>
+
+<p>o预制分支电力电缆：聚氯乙烯绝缘聚氯乙烯护套分支电力电缆（FZ-VV）</p>
+
+<p>o电缆桥架及线槽：托盘式电缆桥架梯级式电缆桥架槽式电缆桥架组装式电缆桥架</p>
+
+<p>（八）.电气信号装置及光电显示设备</p>
+
+<p>o医院呼叫系统：医院护理对讲系统主机</p>
+
+<p>（九）.电气消防及报警装置</p>
+
+<p>o火灾自动报警系统：感烟火灾探测器感温火灾探测器其他类型火灾探测器手动报警按钮其他消防元件火灾报警控制器消防联动控制系统消防应急广播设备电气火灾漏电探测报警系统</p>
+
+<p><strong>资料参考来源：</strong></p>
+
+<p><a href="https://user.qzone.qq.com/2274909099/qzonesoso/?search=%C3%A5%C2%BC%C2%B1%C3%A7%C2%94%C2%B5&amp;entry=64&amp;appname=%C3%A6%C2%97%C2%A5%C3%A5%C2%BF%C2%97&amp;businesstype=blog&amp;backurl=/blog">职业资格认证-智能楼宇管理师报考</a></p>
+
+<h2 id="文章更新记录">文章更新记录</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>序号</th>
+      <th>日期</th>
+      <th>内容</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>2019.08.24</td>
+      <td>1. 初始版本</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>2019.08.28</td>
+      <td>1.增加二级目录《弱电系统设计有哪些计算》、《弱电系统会用到哪些设备》</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/08/28/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E5%90%8D%E6%99%BA%E8%83%BD%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%BA%BA%E5%91%98/" data-toggle="tooltip" data-placement="top" title="教你如何做一名智能化设计师（长期更新内容及链接）">
+                        Previous<br>
+                        <span>教你如何做一名智能化设计师（长期更新内容及链接）</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/09/01/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%80%E4%B8%AA%E7%94%B5%E6%B0%94%E8%AE%BE%E8%AE%A1%E4%BA%BA%E5%91%98/" data-toggle="tooltip" data-placement="top" title="教你如何做一个电气设计人员">
+                        Next<br>
+                        <span>教你如何做一个电气设计人员</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+                <!--Gitalk评论start  -->
+                
+                <!-- Gitalk end -->
+
+                
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#博客" title="博客" rel="2">
+                                    博客
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#学习" title="学习" rel="12">
+                                    学习
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#改变" title="改变" rel="2">
+                                    改变
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#English" title="English" rel="2">
+                                    English
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#智能化" title="智能化" rel="4">
+                                    智能化
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#弱电" title="弱电" rel="4">
+                                    弱电
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#设计" title="设计" rel="2">
+                                    设计
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#CAD" title="CAD" rel="2">
+                                    CAD
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
+        // anchors.options = {
+        //   visible: 'always',
+        //   placement: 'right',
+        //   icon: '#'
+        // };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <!-- add jianshu add target = "_blank" to <a> by BY -->
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/潇洒-炫坤Chan">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Be Perfect 2019
+                    <br>
+                    Theme on <a href="">GitHub</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=&repo=.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script type="text/javascript">
+    if(navigator.serviceWorker){
+        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then((registration) => {console.log('Service Worker Registered. ', registration)})
+            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
+    }
+</script>
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/apple-touch-icon.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
